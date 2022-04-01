@@ -90,32 +90,39 @@
             </div>
         </div>
     </div>
-    <div class="flex justify-between p-10">
-        <div class="flex bg-white rounded-r-2xl p-7 flex-col justify-start">
-            <div class="items-title font-bold text-xl text-orange-500">نیاز به پشتیبانی دارید ؟</div>
-            <div class="items-title font-bold text-md">می توانید ایمیلی برای ما ارسال کنید تا ما شما را راهنمایی کنیم </div>
-            <form class="w-full max-w-sm mx-auto rounded-lg overflow-hidden mt-10 p-6 space-y-10">
-                <div class="relative border-b-2 focus-within:border-blue-500 py-1">
-                    <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs">
-                    <label for="username" class="absolute top-0 duration-300 origin-0">نام کاربری</label>
-                </div>
-                <div class="relative border-b-2 focus-within:border-blue-500">
-                    <input type="text" name="email" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
-                    <label for="email" class="absolute top-0 duration-300 origin-0">ایمیل</label>
-                </div>
-                <div class="relative border-b-2 focus-within:border-blue-500">
-                    <input type="password" name="password" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
-                    <label for="password" class="absolute top-0 duration-300 origin-0">رمز عبور</label>
-                </div>
+    <div class="flex md:flex-row flex-col md:justify-between p-10 items-center">
+        <div class="flex bg-white w-full rounded-r-2xl p-7 flex-col">
+            <div class="absolute px-5 "><div class="items-title font-bold text-xl text-orange-500 text-start ">نیاز به پشتیبانی دارید ؟</div>
+                <div class="items-title font-bold text-md md:text-start text-center">می توانید ایمیلی برای ما ارسال کنید تا ما شما را راهنمایی کنیم </div></div>
+            <div class="flex justify-start">
+                <form class="w-6/12   rounded-lg overflow-hidden mt-10 p-6 space-y-5">
+                    <div class="form-control w-full  top-10">
+                        <label class="label">
+                            <span class="label-text">نام کاربری</span>
+                        </label>
+                        <input type="text" class="rounded-md bg-orange-200 py-2 px-5 w-full">
+                    </div>
+                    <div class="form-control w-full">
+                        <label class="label">
+                            <span class="label-text">ایمیل</span>
+                        </label>
+                        <input type="text" class="rounded-md bg-orange-200 py-2 px-5 w-full">
+                    </div>
+                    <div class="form-control w-full">
+                        <label class="label">
+                            <span class="label-text">پیام شما</span>
+                        </label>
+                        <textarea class="textarea textarea-ghost bg-orange-200 py-12"></textarea>
+                    </div>
+                    <div class="flex md:justify-start justify-center">
+                        <a class="btn px-10 btn-md btn-sm rounded-xl  bg-orange-500 text-white border-none">
+                            ارسال</a></div>
 
-                <div class="flex justify-start">
-                    <a class="btn px-20 btn-md btn-sm rounded-2xl  bg-orange-500 text-white border-none">
-                        ارسال</a></div>
-
-            </form>
+                </form>
+            </div>
         </div>
-        <div class="w-1/2 flex justify-center">
-            <img src="/images/calculator-3671700-3061901%201.png" alt="" class="w-34 h-34">
+        <div class="md:w-1/3 w-full h-max">
+            <img src="/images/calculator-3671700-3061901%201.png" alt="" class="w-full">
         </div>
     </div>
 
