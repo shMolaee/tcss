@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/all.min.css">
+    <link rel="stylesheet" href="/styles/custom.css">
+    <link rel="stylesheet" href="/styles/swiper.min.css">
+    <script src="/js/swiper.min.js"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body dir="rtl">
+<div class="">
+    <div class="w-full bg-orange-200 flex justify-center">
+        <div class="navbar bg-transparent max-w-7xl">
+
+            <div class="navbar-start">
+
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M4 6h16M4 12h8m-8 6h16"/>
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>ورود / ثبت نام</a></li>
+                        <li tabindex="0">
+                            <a class="justify-between">
+                                زبان
+                                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                     viewBox="0 0 24 24">
+                                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/>
+                                </svg>
+                            </a>
+                            <ul class="p-2  rounded bg-white">
+                                <li><a>فارسی</a></li>
+                                <li><a>عربی</a></li>
+                            </ul>
+                        </li>
+                        <li><a>درباره ما</a></li>
+                        <li><a>تماس با ما</a></li>
+                        <li><a>ارتباط با ما</a></li>
+                    </ul>
+                </div>
+                <ul class="menu menu-horizontal p-0 lg:flex hidden">
+                    <li tabindex="0" class="menu-oppener">
+                        <a class="btn btn-sm bg-orange-400 text-white border-none py-0">زبان
+                            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                 viewBox="0 0 24 24">
+                                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                            </svg>
+                        </a>
+                        <ul class="p-2 left-unset right-0">
+                            <li class="menu-item bg-orange-400">
+                                <a class="menu-link" href="#">
+                                    <span class="menu-text text-white">English</span>
+                                </a>
+                            </li>
+                            <li class="menu-item bg-orange-400">
+                                <a class="menu-link" href="#">
+                                    <span class="menu-text text-white">عربی</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="btn btn-sm bg-orange-400 text-white border-none  mr-2  py-0">ثبت نام / ورود</a>
+                    </li>
+                </ul>
+                <div class="w-px mr-3 py-3 bg-white lg:flex hidden"></div>
+                <div class="navbar-center hidden lg:flex navbar-start">
+                    <ul class="menu menu-horizontal p-0">
+                        <li><a class="w-max text-lg">خانه</a></li>
+                        <li><a class="w-max text-lg">وبلاگ</a></li>
+                        <li><a class="w-max text-lg">درباره ما</a></li>
+                        <li><a class="w-max text-lg">تماس با ما</a></li>
+                        <li><a class="w-max text-lg">انجمن</a></li>
+                        <li><a class="w-max text-lg">دشتیبانی آنلاین</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <a class="normal-case text-xl">
+                    <img class="w-17 h-17" src="/images/logo.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="h-screen flex flex-col justify-center">
+        <div class="w-full flex justify-center">
+            <div class="p-5 bg-gray-400 max-w-6xl w-full flex md:flex-row flex-col">
+                <div class="flex md:w-1/2 w-full bg-white rounded-r-2xl p-7 flex-col justify-center">
+                    <div class="items-title font-bold text-3xl">ورود</div>
+                    <form class="w-full max-w-sm mx-auto rounded-lg overflow-hidden p-6 space-y-10">
+                        <div class="relative border-b-2 focus-within:border-blue-500 py-1">
+                            <input type="text" name="username" placeholder=" " class="w-2/2 block w-full appearance-none focus:outline-none bg-transparent" />
+                            <label for="username" class="absolute top-0 duration-300 origin-0">نام کاربری</label>
+                        </div>
+                        <div class="relative border-b-2 focus-within:border-blue-500">
+                            <input type="text" name="email" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
+                            <label for="email" class="absolute top-0 duration-300 origin-0">ایمیل</label>
+                        </div>
+                        <div class="relative border-b-2 focus-within:border-blue-500">
+                            <input type="password" name="password" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
+                            <label for="password" class="absolute top-0 duration-300 origin-0">رمز عبور</label>
+                        </div>
+
+                        <div class="flex justify-center">
+                            <a class="btn px-20 btn-md btn-sm rounded-2xl  bg-orange-500 text-white border-none">
+                                ورود</a></div>
+
+                    </form>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <div class="mb-10 flex justify-center">
+                        <div class="btn btn-circle border-none shadow-xl absolute bg-orange-500"><</div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-start md:w-1/2 w-full bg-orange-500 md:rounded-2xl rounded-l-2xl p-10">
+                    <div class="items-titled font-bold text-3xl text-white">به فارکس خوش امدید</div>
+                    <div class="font-bold text-white leading-7">سایت لورم‌ساز علاوه بر تولید متن ساختگی لورم ایپسوم، انواع ابزارهای آنلاین در زمینه‌های طراحی وبسایت و گرافیک، حسابداری و اندازه‌گیری و دیگر ابزارهای کاربردی برای استفاده در کارهای مختلف ارائه می‌دهدحسابداری و اندازه‌گیری و دیگر ابزارهای کاربردی برای استفاده در کارهای مختلف ارائه می‌دهدحسابداری و اندازه‌گیری و دیگر ابزارهای کاربردی .</div>
+
+                    <div class="flex justify-start mt-5">
+                        <a class="btn px-20 rounded-2xl bg-orange-500 text-white border-white border-2">
+                            بیشتر بدانید</a></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .items-title {
+        font-weight: bold;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+
+    .items-title::after {
+        content: "";
+        width: 80px;
+        height: 5px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        background-color: #FF7A30;
+    }
+    .items-titled {
+        font-weight: bold;
+        position: relative;
+        display: flex;
+        justify-content: start;
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+
+    .items-titled::after {
+        content: "";
+        width: 150px;
+        height: 5px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        background-color: #ffffff;
+    }
+</style>
+
+</body>
+</html>
