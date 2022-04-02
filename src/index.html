@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/all.min.css">
-    <link rel="stylesheet" href="/styles/custom.css">
-    <link rel="stylesheet" href="/styles/swiper.min.css">
-    <script src="/js/swiper.min.js"></script>
-    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/all.min.css">
+    <link rel="stylesheet" href="../styles/custom.css">
+    <link rel="stylesheet" href="../styles/swiper.min.css">
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/main.js"></script>
 </head>
 <body dir="rtl">
-<div class="">
+<div class="overflow-hidden">
     <div class="w-full bg-orange-200 h-header">
         <div class="flex justify-center">
             <div class="navbar bg-transparent max-w-7xl">
@@ -48,26 +49,26 @@
                     </div>
                     <ul class="menu menu-horizontal p-0 lg:flex hidden">
                         <li tabindex="0" class="menu-oppener">
-                            <a class="btn btn-sm bg-orange-400 text-white border-none py-0">زبان
+                            <a class="btn btn-sm bg-orange-500 text-white border-none py-0">زبان
                                 <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                      viewBox="0 0 24 24">
                                     <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
                                 </svg>
                             </a>
                             <ul class="p-2 left-unset right-0">
-                                <li class="menu-item bg-orange-400">
+                                <li class="menu-item bg-orange-500">
                                     <a class="menu-link" href="#">
                                         <span class="menu-text text-white">English</span>
                                     </a>
                                 </li>
-                                <li class="menu-item bg-orange-400">
+                                <li class="menu-item bg-orange-500">
                                     <a class="menu-link" href="#">
                                         <span class="menu-text text-white">عربی</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li><a class="btn btn-sm bg-orange-400 text-white border-none  mr-2  py-0">ثبت نام / ورود</a>
+                        <li><a class="btn btn-sm bg-orange-500 text-white border-none  mr-2  py-0">ثبت نام / ورود</a>
                         </li>
                     </ul>
                     <div class="w-px mr-3 py-3 bg-white lg:flex hidden"></div>
@@ -84,17 +85,17 @@
                 </div>
                 <div class="navbar-end">
                     <a class="normal-case text-xl">
-                        <img class="w-17 h-17" src="/images/logo.png" alt=""></a>
+                        <img class="w-17 h-17" src="../images/logo.png" alt=""></a>
                 </div>
             </div>
         </div>
-        <div class="flex justify-center w-screen h-full">
+        <div class="flex justify-center w-full h-full">
             <div class="flex max-w-7xl w-full justify-between pb-16 items-center md:flex-row flex-col">
-                <div class="flex text-center md:text-right w-5/6 md:w-5/12 flex-col  items-center md:items-start">
+                <div class="flex text-center md:text-right w-5/6 md:w-6/12 flex-col px-5 lg:px-0 items-center md:items-start">
                     <p class="md:text-3xl text-lg font-bold leading-loose">
                         ماشین حساب محاسبه نرخ سود/ضرر فارکس
                     </p>
-                    <p class="md:text-md md:text-xl font-gray leading-10">
+                    <p class="md:text-md md:text-xl font-gray leading-10 mt-5">
                         لورم ایپسوم متنی ساختگی با تولید سادگی نافهموم برای صنعا چاپ و همچنین جبران آنها برای حال حاضر و
                         بعد از آن
                     </p>
@@ -114,7 +115,7 @@
                             </p>
                         </div>
                     </div>
-                    <a class="btn w-max btn-md btn-sm  bg-orange-400 text-white border-none  mr-2  py-0 mt-5">ماشین حساب را
+                    <a class="btn w-max btn-md btn-sm  bg-orange-500 text-white border-none  mr-2  py-0 mt-5">ماشین حساب را
                         امتحان کنید</a>
                 </div>
                 <div class="flex">
@@ -123,7 +124,7 @@
             </div>
         </div>
     </div>
-    <div class="w-screen flex justify-center">
+    <div class="w-full flex justify-center">
         <div class="py-12 md:mx-0 mx-6 swiper w-full max-w-6xl overflow-hidden relative">
             <div class=" px-7 flex mySwiper w-full swiper-wrapper p-0" style="padding: 0">
                 <img class="max-w-6xl rounded-2xl swiper-slide"
@@ -134,7 +135,7 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
-    <div class="bg-gray-200 w-screen flex justify-center flex flex-col items-center pt-8 pb-14">
+    <div class="bg-gray-200 w-full flex justify-center flex flex-col items-center pt-8 pb-14">
         <div class="items-title">معرفی ناتو فارکس</div>
         <div class="max-w-6xl text-gray-700 text-lg leading-10 py-5 px-7 text-center">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
@@ -146,9 +147,9 @@
             دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
         </div>
     </div>
-    <div class=" w-screen flex justify-center flex flex-col items-center pt-8 pb-14">
+    <div class=" w-full flex justify-center flex flex-col items-center pt-8 pb-14">
         <div class="items-title">خدمات دیگر</div>
-        <div class="flex w-full justify-around max-w-7xl mt-5 md:flex-row flex-col items-center">
+        <div class="flex w-full justify-around max-w-7xl flex-wrap mt-5 md:flex-row flex-col items-center">
             <div class="max-w-card w-full  md:mt-0 mt-7 pb-12 flex-col items-center rounded-xl p-4 table_item-card flex justify-center text-center">
                 <h3 class="text-2xl mt-4 font-bold pt-5">
                     محاسبه گر ساعت بازگشایی بازارهای جهان
@@ -160,8 +161,7 @@
                 </div>
 
                 <div class="flex mb-4 flex-wrap justify-center  space-x-4">
-                    <div></div>
-                    <div></div>
+                    <div></div><div></div>
                     <div class="flex items-center mt-3">
                         <div><img class="h-6" src="/images/icons/accuracy%201.png" alt=""></div>
 
@@ -184,7 +184,7 @@
                         </p>
                     </div>
                 </div>
-                <a class="btn w-max btn-sm  bg-orange-400 text-white border-none  mr-2  py-0 mt-2 px-4">
+                <a class="btn w-max btn-sm  bg-orange-500 text-white border-none  mr-2  py-0 mt-2 px-4">
                     امتحان کنید</a>
             </div>
             <div class="max-w-card w-full  md:mt-0 mt-7 pb-12 flex-col items-center rounded-xl p-4 table_item-card flex justify-center text-center">
@@ -222,7 +222,7 @@
                         </p>
                     </div>
                 </div>
-                <a class="btn w-max btn-sm  bg-orange-400 text-white border-none  mr-2  py-0 mt-2 px-4">
+                <a class="btn w-max btn-sm  bg-orange-500 text-white border-none  mr-2  py-0 mt-2 px-4">
                     امتحان کنید</a>
             </div>
             <div class="max-w-card w-full  md:mt-0 mt-7 pb-12 flex-col items-center rounded-xl p-4 table_item-card flex justify-center text-center">
@@ -260,12 +260,12 @@
                         </p>
                     </div>
                 </div>
-                <a class="btn w-max btn-sm  bg-orange-400 text-white border-none  mr-2  py-0 mt-2 px-4">
+                <a class="btn w-max btn-sm  bg-orange-500 text-white border-none  mr-2  py-0 mt-2 px-4">
                     امتحان کنید</a>
             </div>
         </div>
     </div>
-    <div class="bg-gray-200 w-screen flex justify-center flex flex-col items-center pt-8 pb-14">
+    <div class="bg-gray-200 w-full flex justify-center flex flex-col items-center pt-8 pb-14">
         <div class="items-title">معرفی ناتو فارکس</div>
         <div class="flex w-full justify-around max-w-6xl mt-10 px-6">
             <div class="overflow-x-auto w-full text-lg font-bold rounded-2xl border border-black" >
@@ -371,7 +371,7 @@
 
     <div class=" w-full flex justify-center flex flex-col items-center pt-8 ">
         <div class="items-title">مزیت های فارکس</div>
-        <div class="flex w-full justify-around max-w-7xl mt-5 flex-col ">
+        <div class="flex w-full justify-around max-w-7xl mt-5 flex-col px-4">
             <div class="flex justify-between items-center md:flex-row flex-col">
                 <div class="flex flex-col items-start md:w-1/3 w-full items-center md:items-start justify-center md:px-0 px-7 max-w-3xl max-h-56">
                     <div class="text-lg leading-10 font-bold">
@@ -413,9 +413,9 @@
             </div>
         </div>
     </div>
-    <footer class="relative  flex justify-center mt-56 z-20 bg-orange-200 w-screen overflow-x-hidden p-20" style="margin-top: 170px;">
+    <footer class="relative flex justify-center mt-56 z-20 bg-orange-200 w-full sm:p-20 p-8 pt-0" style="margin-top: 170px;">
         <div class="max-w-7xl w-full">
-            <div class="flex flex-row justify-between md:flex-row flex-col md:items-start items-center md:text-right text-center">
+            <div class="flex flex-row justify-between flex-wrap md:flex-row flex-col md:items-start items-center md:text-right text-center">
                 <div class="flex flex-col">
                     <div class="title my-9">
                         <img class="w-17 h-17" src="/images/logo.png" alt="">
@@ -473,81 +473,5 @@
     </footer>
 </div>
 
-<script>
-
-    const swiper = new Swiper(".swiper", {
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-
-    documents.querySelector(".menu-oppener > a").onclick = () => {
-        documents.querySelector(".menu-oppener > ul").classlist.remove("hidden");
-    }
-
-</script>
-<style>
-    .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
-    }
-
-    .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        background: #fff;
-    }
-
-    .swiper-pagination {
-        bottom: 20% !important;
-    }
-
-    .items-title {
-        font-size: 1.75rem;
-        font-weight: bold;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 15px;
-        margin-bottom: 20px;
-    }
-
-    .items-title::after {
-        content: "";
-        width: 100px;
-        height: 5px;
-        border-radius: 10px;
-        position: absolute;
-        bottom: 0;
-        background-color: #FF7A30;
-    }
-
-    .table_item-card {
-        position: relative;
-        box-shadow: rgb(183 183 183 / 40%) -5px 5px 10px;
-    }
-
-    .table_item-card::after {
-        content: "";
-        width: 115px;
-        height: 7px;
-        border-radius: 0 0 10px 10px;
-        position: absolute;
-        top: 0;
-        background-color: #FF7A30;
-    }
-
-    table tr:nth-child(even) td {background-color: #FFE2C7;}
-    table tr td {text-align: center;}
-    footer::before {
-        content: "";
-        width: 120%;
-        box-sizing: border-box;
-        height: 70vh;
-        top: -20vh;
-        position: absolute;
-        border-radius: 50%;
-        background: rgb(254 215 170);
-        z-index: -1;
-    }
-</style>
 </body>
 </html>

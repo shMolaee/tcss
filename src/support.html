@@ -2,18 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/all.min.css">
-    <link rel="stylesheet" href="/styles/custom.css">
-    <link rel="stylesheet" href="/styles/swiper.min.css">
-    <script src="/js/swiper.min.js"></script>
-    <link href="/dist/output.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/all.min.css">
+    <link rel="stylesheet" href="../styles/custom.css">
+    <link rel="stylesheet" href="../styles/swiper.min.css">
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/main.js"></script>
 </head>
 <body dir="rtl">
-<div class="">
+<div class="overflow-hidden">
     <div class="w-full bg-orange-200 flex justify-center">
         <div class="navbar bg-transparent max-w-7xl">
 
@@ -50,26 +48,26 @@
                 </div>
                 <ul class="menu menu-horizontal p-0 lg:flex hidden">
                     <li tabindex="0" class="menu-oppener">
-                        <a class="btn btn-sm bg-orange-400 text-white border-none py-0">زبان
+                        <a class="btn btn-sm bg-orange-500 text-white border-none py-0">زبان
                             <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                  viewBox="0 0 24 24">
                                 <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
                             </svg>
                         </a>
                         <ul class="p-2 left-unset right-0">
-                            <li class="menu-item bg-orange-400">
+                            <li class="menu-item bg-orange-500">
                                 <a class="menu-link" href="#">
                                     <span class="menu-text text-white">English</span>
                                 </a>
                             </li>
-                            <li class="menu-item bg-orange-400">
+                            <li class="menu-item bg-orange-500">
                                 <a class="menu-link" href="#">
                                     <span class="menu-text text-white">عربی</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li><a class="btn btn-sm bg-orange-400 text-white border-none  mr-2  py-0">ثبت نام / ورود</a>
+                    <li><a class="btn btn-sm bg-orange-500 text-white border-none  mr-2  py-0">ثبت نام / ورود</a>
                     </li>
                 </ul>
                 <div class="w-px mr-3 py-3 bg-white lg:flex hidden"></div>
@@ -86,53 +84,55 @@
             </div>
             <div class="navbar-end">
                 <a class="normal-case text-xl">
-                    <img class="w-17 h-17" src="/images/logo.png" alt=""></a>
+                    <img class="w-17 h-17" src="../images/logo.png" alt=""></a>
             </div>
         </div>
     </div>
-    <div class="flex md:flex-row flex-col md:justify-between justify-center p-10 items-center">
-        <div class="flex bg-white md:w-1/2 w-full rounded-r-2xl p-7 flex-col">
-            <div class="absolute px-5 ">
-                <div class="items-title font-bold text-xl text-orange-500 text-start ">نیاز به پشتیبانی دارید ؟</div>
-                <div class="items-title font-bold text-md md:text-start text-center">می توانید ایمیلی برای ما ارسال کنید
-                    تا ما شما را راهنمایی کنیم
+    <div class="w-full flex justify-center">
+        <div class="flex md:flex-row flex-col md:justify-between justify-center w-full max-w-7xl p-4 md:p-10 items-center">
+            <div class="flex bg-white md:w-1/2 w-full rounded-r-2xl p-7 px-3 md:px-7 flex-col">
+                <div class="px-2 md:px-6">
+                    <div class="font-bold text-xl text-orange-500 text-start ">نیاز به پشتیبانی دارید ؟</div>
+                    <div class="font-bold md:text-md text-md text-right text-center mt-2">می توانید ایمیلی برای
+                        ما ارسال کنید تا ما شما رو راهنمایی کنیم
+                    </div>
+                </div>
+                <div class="flex justify-start">
+                    <form class="lg:w-10/12 w-full rounded-lg overflow-hidden p-2 md:p-4 px-6 px-2 space-y-5">
+                        <div class="form-control w-full">
+                            <label class="label">
+                                <span class="label-text">نام کاربری</span>
+                            </label>
+                            <input type="text" class="rounded-md bg-orange-200 py-2 px-5 w-full">
+                        </div>
+                        <div class="form-control w-full">
+                            <label class="label">
+                                <span class="label-text">ایمیل</span>
+                            </label>
+                            <input type="text" class="rounded-md bg-orange-200 py-2 px-5 w-full">
+                        </div>
+                        <div class="form-control w-full">
+                            <label class="label">
+                                <span class="label-text">پیام شما</span>
+                            </label>
+                            <textarea class="textarea textarea-ghost bg-orange-200 h-40"></textarea>
+                        </div>
+                        <div class="flex md:justify-start justify-center">
+                            <a class="btn px-10 btn-md btn-sm rounded-xl  bg-orange-500 text-white border-none">
+                                ارسال</a></div>
+
+                    </form>
                 </div>
             </div>
-            <div class="flex justify-start">
-                <form class="lg:9/12 w-full rounded-lg overflow-hidden mt-10 p-6 space-y-5">
-                    <div class="form-control w-full  top-10">
-                        <label class="label">
-                            <span class="label-text">نام کاربری</span>
-                        </label>
-                        <input type="text" class="rounded-md bg-orange-200 py-2 px-5 w-full">
-                    </div>
-                    <div class="form-control w-full">
-                        <label class="label">
-                            <span class="label-text">ایمیل</span>
-                        </label>
-                        <input type="text" class="rounded-md bg-orange-200 py-2 px-5 w-full">
-                    </div>
-                    <div class="form-control w-full">
-                        <label class="label">
-                            <span class="label-text">پیام شما</span>
-                        </label>
-                        <textarea class="textarea textarea-ghost bg-orange-200 h-40"></textarea>
-                    </div>
-                    <div class="flex md:justify-start justify-center">
-                        <a class="btn px-10 btn-md btn-sm rounded-xl  bg-orange-500 text-white border-none">
-                            ارسال</a></div>
-
-                </form>
+            <div class="md:w-1/2 w-full h-max hidden md:flex justify-center">
+                <img src="/images/Capture-removebg-preview%201.png" alt="" class="w-9/12">
             </div>
         </div>
-        <div class="md:w-1/2 w-full h-max hidden md:flex">
-            <img src="/images/calculator-3671700-3061901%201.png" alt="" class="w-full">
-        </div>
     </div>
-    <footer class="relative  flex justify-center mt-56 z-20 bg-orange-200 w-full /  overflow-x-hidden p-20"
-            style="margin-top: 170px;">
+
+    <footer class="relative flex justify-center mt-56 z-20 bg-orange-200 w-full sm:p-20 p-8 pt-0" style="margin-top: 170px;">
         <div class="max-w-7xl w-full">
-            <div class="flex flex-row justify-between md:flex-row flex-col md:items-start items-center md:text-right text-center">
+            <div class="flex flex-row justify-between flex-wrap md:flex-row flex-col md:items-start items-center md:text-right text-center">
                 <div class="flex flex-col">
                     <div class="title my-9">
                         <img class="w-17 h-17" src="/images/logo.png" alt="">
