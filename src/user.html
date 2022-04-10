@@ -9,16 +9,12 @@
     <link href="../dist/output.css" rel="stylesheet">
     <script src="../js/swiper.min.js"></script>
     <script src="../js/main.js"></script>
+    <style>
+        body table tr:nth-child(even) td {
+            background-color: unset;
+        }
+    </style>
 </head> 
-<style>
-    .toggle-checkbox:checked {
-  right: 0;
-  border-color: #68D391;
-}
-.toggle-checkbox:checked + .toggle-label {
-  background-color: #68D391;
-}
-</style>
 <body dir="rtl">
 <div class="overflow-hidden">
     <div class="w-full bg-orange-200 flex justify-center">
@@ -99,33 +95,27 @@
     </div>
     <div class="w-full flex justify-center mt-16">
         <div class="flex md:flex-row md:justify-between flex-col w-11/12 max-w-7xl shadow-[0_0px_20px_0px_rgba(0,0,0,0.15)]">
-            <div class="md:w-4/6 w-full flex flex-wrap md:p-6 p-2 md:border-l-4 border-b-4 md:border-b-0 md:pb-14">
-                <div class="flex mx-10 md:mt-0 mt-2 w-44">
-                    <div class="text-black text-lg"> سن  :   </div>
-                    <div class="mx-1 text-lg"> 18 سال</div>
-                </div>
-                <div class="flex mx-10 md:mt-0 mt-2 w-44">
-                    <div class="text-black text-lg"> تاریخ ورود  :   </div>
-                    <div class="mx-1 text-lg"> 1401/2/1 </div>
-                </div>
-                <div class="flex mx-10 md:mt-0 mt-2 w-44">
-                    <div class="text-black text-lg">  نام کاربری  :   </div>
-                    <div class="mx-1 text-lg"> 18 سال</div>
-                </div>
-                
-                <div class="flex mx-10 md:mt-0 mt-2 w-44">
-                    <div class="text-black text-lg"> عضو vip : </div>
-                    
-                        <div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
-                            <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
-                            <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
-                        </div>
-                    
-                </div>
-                <div class="flex mx-10 md:mt-0 mt-2 w-44">
-                    <div class="text-black text-lg">  رتبه ادمین  :   </div>
-                    <div class="mx-1 text-lg"> عضو </div>
-                </div>
+            <div class="md:w-4/6 w-full flex flex-wrap p-6 md:border-l-4 border-b-4 md:border-b-0 md:pb-14">
+                <table class="w-full">
+                    <tbody class="w-full mr-20">
+                        <tr class="w-full">
+                            <td class="md:table-cell flex text-black text-lg text-right">سن : <span>18 سال</span></td>
+                            <td class="md:table-cell flex text-black text-lg text-right md:mt-0 mt-2">تاریخ تولد : <span>1401/2/1</span></td>
+                            <td class="md:table-cell flex text-black text-lg text-right md:mt-0 mt-2">نام کاربری : <span>parnian</span></td>
+                        </tr>
+                        <tr>
+                            <td class="md:table-cell flex text-black text-lg text-right md:mt-0 mt-2">
+                                <div class="flex">
+                                    <span> کاربر vip </span> : 
+                                    <div class="form-check form-switch mt-1 margin-0  mr-2">
+                                        <input class="form-check-input min-w-10 appearance-none w-9 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-gray-300 focus:outline-none cursor-pointer shadow-sm" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                      </div>
+                                </div>
+                            </td>
+                            <td class="md:table-cell flex text-black text-lg text-right md:mt-0 mt-2">سن : <span>18 سال</span></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
                 <div class="md:w-2/6 w-full flex justify-center py-6">
                     <div class="flex flex-col">

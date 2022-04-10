@@ -4,7 +4,8 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.4",
-    "daisyui": "^2.13.4"
+    "daisyui": "^2.13.4",
+    "tw-elements": "^1.0.0-alpha12"
   },
   "scripts": {
     "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"

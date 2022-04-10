@@ -2,7 +2,8 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   plugins: [
     require('daisyui'),
-    require("autoprefixer")
+    require("autoprefixer"),
+    require('tw-elements/dist/plugin')
     // require('tailwindcss-rtl'),
   ],
   daisyui: {
