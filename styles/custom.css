@@ -107,8 +107,8 @@ footer::before {
     content: "";
     width: 120%;
     box-sizing: border-box;
-    height: 70vh;
-    top: -20vh;
+    height: 300px;
+    top: -150px;
     position: absolute;
     border-radius: 50%;
     background: rgb(254 215 170);
