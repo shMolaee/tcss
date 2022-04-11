@@ -2120,41 +2120,6 @@ html {
   border-radius: var(--rounded-btn, 0.5rem);
 }
 
-.btn-outline.btn-primary .badge {
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--p) / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--p) / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: hsl(var(--pc) / var(--tw-text-opacity));
-}
-
-.btn-outline.btn-primary .badge-outline {
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--p) / var(--tw-border-opacity));
-  background-color: transparent;
-  --tw-text-opacity: 1;
-  color: hsl(var(--p) / var(--tw-text-opacity));
-}
-
-.btn-outline.btn-primary:hover .badge {
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--pc) / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--pc) / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: hsl(var(--p) / var(--tw-text-opacity));
-}
-
-.btn-outline.btn-primary:hover .badge.outline {
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--pc) / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--pf, var(--p)) / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: hsl(var(--pc) / var(--tw-text-opacity));
-}
-
 .btn:active:hover,
   .btn:active:focus {
   -webkit-animation: none;
@@ -2172,26 +2137,6 @@ html {
 .btn:focus-visible {
   outline: 2px solid hsl(var(--nf));
   outline-offset: 2px;
-}
-
-.btn-primary {
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--p) / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--p) / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: hsl(var(--pc) / var(--tw-text-opacity));
-}
-
-.btn-primary:hover, .btn-primary.btn-active {
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--pf, var(--p)) / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--pf, var(--p)) / var(--tw-bg-opacity));
-}
-
-.btn-primary:focus-visible {
-  outline: 2px solid hsl(var(--p));
 }
 
 .btn.glass:hover,
@@ -2219,20 +2164,6 @@ html {
 
 .btn-ghost:focus-visible {
   outline: 2px solid 0 0 2px currentColor;
-}
-
-.btn-outline.btn-primary {
-  --tw-text-opacity: 1;
-  color: hsl(var(--p) / var(--tw-text-opacity));
-}
-
-.btn-outline.btn-primary:hover {
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--pf, var(--p)) / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--pf, var(--p)) / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: hsl(var(--pc) / var(--tw-text-opacity));
 }
 
 .btn-disabled, .btn-disabled:hover, .btn[disabled], .btn[disabled]:hover {
@@ -2402,10 +2333,6 @@ body[dir="rtl"] .checkbox {
 body[dir="rtl"] .checkbox:checked,
     body[dir="rtl"] .checkbox[checked="true"] {
   background-image: linear-gradient(-45deg, transparent 65%, hsl(var(--chkbg)) 65.99%), linear-gradient(45deg, transparent 75%, hsl(var(--chkbg)) 75.99%), linear-gradient(-45deg, hsl(var(--chkbg)) 40%, transparent 40.99%), linear-gradient(45deg, hsl(var(--chkbg)) 30%, hsl(var(--chkfg)) 30.99%, hsl(var(--chkfg)) 40%, transparent 40.99%), linear-gradient(-45deg, hsl(var(--chkfg)) 50%, hsl(var(--chkbg)) 50.99%);
-}
-
-.drawer-toggle:focus-visible ~ .drawer-content .drawer-button.btn-primary {
-  outline: 2px solid hsl(var(--p));
 }
 
 .drawer-toggle:focus-visible ~ .drawer-content .drawer-button.btn-ghost {
@@ -4406,12 +4333,12 @@ textarea.form-control.is-invalid {
   margin-top: 0.5rem;
 }
 
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
 .mr-20 {
   margin-right: 5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
 }
 
 .mt-1 {
@@ -4480,14 +4407,6 @@ textarea.form-control.is-invalid {
   height: 1rem;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-14 {
-  height: 3.5rem;
-}
-
 .h-16 {
   height: 4rem;
 }
@@ -4518,12 +4437,12 @@ textarea.form-control.is-invalid {
   width: max-content;
 }
 
-.w-80 {
-  width: 20rem;
+.w-screen {
+  width: 100vw;
 }
 
-.w-96 {
-  width: 24rem;
+.w-64 {
+  width: 16rem;
 }
 
 .w-1\/3 {
@@ -4574,36 +4493,16 @@ textarea.form-control.is-invalid {
   width: 11rem;
 }
 
-.w-4\/5 {
-  width: 80%;
-}
-
-.w-72 {
-  width: 18rem;
-}
-
-.w-64 {
-  width: 16rem;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-14 {
-  width: 3.5rem;
+.w-56 {
+  width: 14rem;
 }
 
 .w-16 {
   width: 4rem;
 }
 
-.w-56 {
-  width: 14rem;
+.min-w-650 {
+  min-width: 600px;
 }
 
 .max-w-7xl {
@@ -4688,10 +4587,6 @@ textarea.form-control.is-invalid {
   justify-content: flex-start;
 }
 
-.justify-end {
-  justify-content: flex-end;
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -4732,24 +4627,20 @@ textarea.form-control.is-invalid {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
-.space-x-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
 .overflow-x-auto {
   overflow-x: auto;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .rounded {
@@ -4898,16 +4789,6 @@ textarea.form-control.is-invalid {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-.bg-gray-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -4973,6 +4854,11 @@ textarea.form-control.is-invalid {
   padding-bottom: 1rem;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -5021,11 +4907,6 @@ textarea.form-control.is-invalid {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 
 .py-28 {
@@ -5217,6 +5098,12 @@ textarea.form-control.is-invalid {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-\[0_0px_20px_0px_rgba\(0\2c 0\2c 0\2c 0\.15\)\] {
   --tw-shadow: 0 0px 20px 0px rgba(0,0,0,0.15);
   --tw-shadow-colored: 0 0px 20px 0px var(--tw-shadow-color);
@@ -5235,48 +5122,14 @@ textarea.form-control.is-invalid {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-lg {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-inner {
   --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-\[0_35px_60px_-15px_rgba\(0\2c 0\2c 0\2c 0\.3\)\] {
-  --tw-shadow: 0 35px 60px -15px rgba(0,0,0,0.3);
-  --tw-shadow-colored: 0 35px 60px -15px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-gray-300 {
   --tw-shadow-color: #d1d5db;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-inherit {
-  --tw-shadow-color: inherit;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-gray-500 {
-  --tw-shadow-color: #6b7280;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -5412,6 +5265,10 @@ input:focus-within ~ label {
     justify-content: space-between;
   }
 
+  .md\:overflow-hidden {
+    overflow: hidden;
+  }
+
   .md\:rounded-r-2xl {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -5529,18 +5386,6 @@ input:focus-within ~ label {
 
   .xl\:mr-20 {
     margin-right: 5rem;
-  }
-
-  .xl\:mr-2 {
-    margin-right: 0.5rem;
-  }
-
-  .xl\:mr-4 {
-    margin-right: 1rem;
-  }
-
-  .xl\:mr-10 {
-    margin-right: 2.5rem;
   }
 
   .xl\:flex-row {
