@@ -113,6 +113,7 @@ footer::before {
     border-radius: 50%;
     background: rgb(254 215 170);
     z-index: -1;
+    margin-top: 30px;
 }
 
 @media only screen and (max-width: 600px) {

@@ -41,6 +41,9 @@ module.exports = {
         'full': '100%',
         'header': '590px'
       },
+      minHeight: {
+        '16': '64px',
+      }
     }
   }
 }
