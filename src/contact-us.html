@@ -10,9 +10,9 @@
     <script src="../js/swiper.min.js"></script>
     <script src="../js/main.js"></script>
 </head>
-<body dir="rtl">
+<body dir="rtl" class="dark:bg-black">
 <div class="overflow-hidden">
-    <div class="w-full bg-orange-200 flex justify-center">
+    <div class="w-full bg-orange-200 dark:bg-stone-900 flex justify-center">
         <div class="navbar bg-transparent max-w-7xl">
 
             <div class="navbar-start">
@@ -25,8 +25,7 @@
                                   d="M4 6h16M4 12h8m-8 6h16"/>
                         </svg>
                     </label>
-                    <ul tabindex="0"
-                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a>ورود / ثبت نام</a></li>
                         <li tabindex="0">
                             <a class="justify-between">
@@ -73,27 +72,27 @@
                 <div class="w-px mr-3 py-3 bg-white lg:flex hidden"></div>
                 <div class="navbar-center hidden lg:flex navbar-start">
                     <ul class="menu menu-horizontal p-0">
-                        <li><a class="w-max text-lg">خانه</a></li>
-                        <li><a class="w-max text-lg">وبلاگ</a></li>
-                        <li><a class="w-max text-lg">درباره ما</a></li>
-                        <li><a class="w-max text-lg">تماس با ما</a></li>
-                        <li><a class="w-max text-lg">انجمن</a></li>
-                        <li><a class="w-max text-lg">پشتیبانی آنلاین</a></li>
+                        <li><a class="w-max text-lg dark:text-white">خانه</a></li>
+                        <li><a class="w-max text-lg dark:text-white">وبلاگ</a></li>
+                        <li><a class="w-max text-lg dark:text-white">درباره ما</a></li>
+                        <li><a class="w-max text-lg dark:text-white">تماس با ما</a></li>
+                        <li><a class="w-max text-lg dark:text-white">انجمن</a></li>
+                        <li><a class="w-max text-lg dark:text-white">پشتیبانی آنلاین</a></li>
                     </ul>
                 </div>
             </div>
             <div class="navbar-end">
                 <a class="normal-case text-xl">
-                    <img class="w-17 h-17" src="../images/logo.png" alt=""></a>
+                    <img class="w-17 h-17 darkMode dark:bg-white" src="../images/logo.png" alt=""></a>
             </div>
         </div>
     </div>
     <div class="w-full flex justify-center">
         <div class="flex md:flex-row flex-col md:justify-between justify-center w-full max-w-7xl p-4 md:p-10 items-center">
-            <div class="flex bg-white md:w-1/2 w-full rounded-r-2xl p-7 px-3 md:px-7 flex-col">
+            <div class="flex bg-white dark:bg-black md:w-1/2 w-full rounded-r-2xl p-7 px-3 md:px-7 flex-col">
                 <div class="px-2 md:px-6">
-                    <div class="font-bold text-xl text-orange-500 text-start ">نیاز به پشتیبانی دارید ؟</div>
-                    <div class="font-bold md:text-md text-md text-right text-center mt-2">می توانید ایمیلی برای
+                    <div class="font-bold text-xl text-orange-500 text-start">نیاز به پشتیبانی دارید ؟</div>
+                    <div class="font-bold md:text-md text-md text-right text-center mt-2 dark:text-white">می توانید ایمیلی برای
                         ما ارسال کنید تا ما شما رو راهنمایی کنیم
                     </div>
                 </div>
@@ -101,21 +100,21 @@
                     <form class="lg:w-10/12 w-full rounded-lg overflow-hidden p-2 md:p-4 px-6 px-2 space-y-5">
                         <div class="form-control w-full">
                             <label class="label">
-                                <span class="label-text">نام کاربری</span>
+                                <span class="label-text dark:text-white">نام کاربری</span>
                             </label>
-                            <input type="text" class="rounded-md bg-orange-200 py-2 px-5 w-full">
+                            <input type="text" class="rounded-md bg-orange-200 py-2 px-5 w-full dark:bg-zinc-900">
                         </div>
                         <div class="form-control w-full">
                             <label class="label">
-                                <span class="label-text">ایمیل</span>
+                                <span class="label-text dark:text-white">ایمیل</span>
                             </label>
-                            <input type="text" class="rounded-md bg-orange-200 py-2 px-5 w-full">
+                            <input type="text" class="rounded-md bg-orange-200 py-2 px-5 w-full dark:bg-zinc-900">
                         </div>
                         <div class="form-control w-full">
                             <label class="label">
-                                <span class="label-text">پیام شما</span>
+                                <span class="label-text dark:text-white">پیام شما</span>
                             </label>
-                            <textarea class="textarea textarea-ghost bg-orange-200 h-40"></textarea>
+                            <textarea class="textarea textarea-ghost bg-orange-200 h-40 dark:bg-zinc-900"></textarea>
                         </div>
                         <div class="flex md:justify-start justify-center">
                             <a class="btn px-10 btn-md btn-sm rounded-xl  bg-orange-500 text-white border-none">
@@ -232,5 +231,17 @@
     </footer>
 </div>
 
+<script>
+    const changeTheme = () => {
+        if(document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark')
+        }else {
+        document.documentElement.classList.add('dark')
+        }
+    } 
+    document.querySelector('.darkMode').onclick = () => {
+        changeTheme();
+    }
+</script>
 </body>
 </html>

@@ -14,9 +14,9 @@
     <script src="../js/main.js"></script>
 </head>
 
-<body dir="rtl">
+<body dir="rtl" class="dark:bg-black">
     <div class="overflow-hidden">
-        <div class="w-full bg-orange-200 flex justify-center">
+        <div class="w-full bg-orange-200 dark:bg-stone-900 flex justify-center">
             <div class="navbar bg-transparent max-w-7xl">
 
                 <div class="navbar-start">
@@ -76,25 +76,25 @@
                     <div class="w-px mr-3 py-3 bg-white lg:flex hidden"></div>
                     <div class="navbar-center hidden lg:flex navbar-start">
                         <ul class="menu menu-horizontal p-0">
-                            <li><a class="w-max text-lg">خانه</a></li>
-                            <li><a class="w-max text-lg">وبلاگ</a></li>
-                            <li><a class="w-max text-lg">درباره ما</a></li>
-                            <li><a class="w-max text-lg">تماس با ما</a></li>
-                            <li><a class="w-max text-lg">انجمن</a></li>
-                            <li><a class="w-max text-lg">پشتیبانی آنلاین</a></li>
+                            <li><a class="w-max text-lg dark:text-white">خانه</a></li>
+                            <li><a class="w-max text-lg dark:text-white">وبلاگ</a></li>
+                            <li><a class="w-max text-lg dark:text-white">درباره ما</a></li>
+                            <li><a class="w-max text-lg dark:text-white">تماس با ما</a></li>
+                            <li><a class="w-max text-lg dark:text-white">انجمن</a></li>
+                            <li><a class="w-max text-lg dark:text-white">پشتیبانی آنلاین</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="navbar-end">
                     <a class="normal-case text-xl">
-                        <img class="w-17 h-17" src="../images/logo.png" alt=""></a>
+                        <img class="w-17 h-17 darkMode dark:bg-white" src="../images/logo.png" alt=""></a>
                 </div>
             </div>
         </div>
         <div class="w-full flex flex-col justify-center md:px-48 px-16 mt-20">
             <div class="flex flex-col rounded-xl border max-w-7xl w-full justify-center">
                 <div class="flex flex-col justify-center">
-                    <div class="w-full flex justify-center bg-orange-500 text-lg p-6 rounded-t-xl text-white">تبدیل سنت به دلار و بالعکس</div>
+                    <div class="w-full flex justify-center bg-orange-500 dark:bg-gray-900 text-lg p-6 rounded-t-xl text-white">تبدیل سنت به دلار و بالعکس</div>
                     <div class="my-10">
                         <form action="" class="flex flex-col">
 
@@ -116,7 +116,7 @@
                                 </div>
                             </div>
                             <div class="flex justify-center my-10">
-                                <button class="btn px-14 bg-orange-500 border-none text-white">تبدیل</button>
+                                <button class="btn px-14 bg-orange-500 border-none text-white dark:bg-stone-800 shadow-3xl shadow shadow-black dark:shadow-gray-600">تبدیل</button>
                             </div>
                         </form>
                     </div>
@@ -124,7 +124,7 @@
             </div>
             <div class="flex flex-col rounded-xl border max-w-7xl w-full justify-center mt-20">
                 <div class="flex flex-col justify-center">
-                    <div class="w-full flex justify-center bg-orange-500 text-lg p-6 rounded-t-xl text-white">نتیجه تبدیل</div>
+                    <div class="w-full flex justify-center bg-orange-500 dark:bg-gray-900 text-lg p-6 rounded-t-xl text-white">نتیجه تبدیل</div>
                     <div class="my-16">
 
                     </div>
@@ -230,6 +230,18 @@
 
     </div>
 
+    <script>
+        const changeTheme = () => {
+            if(document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark')
+            }else {
+            document.documentElement.classList.add('dark')
+            }
+        } 
+        document.querySelector('.darkMode').onclick = () => {
+            changeTheme();
+        }
+    </script>
 </body>
 
 </html>

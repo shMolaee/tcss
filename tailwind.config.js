@@ -6,6 +6,7 @@ module.exports = {
     require('tw-elements/dist/plugin')
     // require('tailwindcss-rtl'),
   ],
+  darkMode: 'class',
   daisyui: {
     rtl: true,
   },

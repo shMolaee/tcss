@@ -10,9 +10,9 @@
     <script src="../js/swiper.min.js"></script>
     <script src="../js/main.js"></script>
 </head>
-<body dir="rtl">
+<body dir="rtl" class="dark:bg-black">
 <div class="overflow-hidden">
-    <div class="w-full bg-orange-200 flex justify-center">
+    <div class="w-full bg-orange-200 dark:bg-stone-900 flex justify-center">
         <div class="navbar bg-transparent max-w-7xl">
 
             <div class="navbar-start">
@@ -25,8 +25,7 @@
                                   d="M4 6h16M4 12h8m-8 6h16"/>
                         </svg>
                     </label>
-                    <ul tabindex="0"
-                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a>ورود / ثبت نام</a></li>
                         <li tabindex="0">
                             <a class="justify-between">
@@ -73,26 +72,26 @@
                 <div class="w-px mr-3 py-3 bg-white lg:flex hidden"></div>
                 <div class="navbar-center hidden lg:flex navbar-start">
                     <ul class="menu menu-horizontal p-0">
-                        <li><a class="w-max text-lg">خانه</a></li>
-                        <li><a class="w-max text-lg">وبلاگ</a></li>
-                        <li><a class="w-max text-lg">درباره ما</a></li>
-                        <li><a class="w-max text-lg">تماس با ما</a></li>
-                        <li><a class="w-max text-lg">انجمن</a></li>
-                        <li><a class="w-max text-lg">پشتیبانی آنلاین</a></li>
+                        <li><a class="w-max text-lg dark:text-white">خانه</a></li>
+                        <li><a class="w-max text-lg dark:text-white">وبلاگ</a></li>
+                        <li><a class="w-max text-lg dark:text-white">درباره ما</a></li>
+                        <li><a class="w-max text-lg dark:text-white">تماس با ما</a></li>
+                        <li><a class="w-max text-lg dark:text-white">انجمن</a></li>
+                        <li><a class="w-max text-lg dark:text-white">پشتیبانی آنلاین</a></li>
                     </ul>
                 </div>
             </div>
             <div class="navbar-end">
                 <a class="normal-case text-xl">
-                    <img class="w-17 h-17" src="../images/logo.png" alt=""></a>
+                    <img class="w-17 h-17 darkMode dark:bg-white" src="../images/logo.png" alt=""></a>
             </div>
         </div>
     </div>
     <div class="flex flex-col justify-center mt-10">
         <div class="w-full flex justify-center">
-            <div class="p-5 bg-gray-300 max-w-5xl w-full flex md:flex-row flex-col">
-                <div class="flex md:w-1/2 w-full bg-white md:rounded-r-2xl md:rounded-tl-none rounded-t-2xl p-7 flex-col justify-center">
-                    <div class="items-title font-bold text-3xl text-black">ثبت نام</div>
+            <div class="p-5 bg-gray-300 dark:bg-stone-800 max-w-5xl w-full flex md:flex-row flex-col">
+                <div class="flex md:w-1/2 w-full bg-white dark:bg-stone-900 md:rounded-r-2xl md:rounded-tl-none rounded-t-2xl p-7 flex-col justify-center">
+                    <div class="items-title font-bold text-3xl text-black dark:text-white">ثبت نام</div>
                     <form class="w-full max-w-sm mx-auto rounded-lg overflow-hidden p-6 space-y-10">
                         <div class="relative border-b-4 border-gray-300 focus-within:border-blue-500">
                             <input type="text" name="username" placeholder=" " id="username"
@@ -116,7 +115,7 @@
                         </div>
 
                         <div class="flex justify-center">
-                            <a class="btn px-20 btn-md btn-sm rounded-2xl  bg-orange-500 text-white border-none">
+                            <a class="btn px-20 btn-md btn-sm rounded-2xl dark:bg-stone-900 dark:bg-stone-800 shadow-3xl shadow shadow-black dark:shadow-gray-600 bg-orange-500 text-white border-none">
                                 ورود</a></div>
 
                     </form>
@@ -130,7 +129,7 @@
                             <i class="fa fa-angle-right text-lg"></i></div>
                     </div>
                 </div>
-                <div class="flex flex-col justify-center md:w-1/2 w-full bg-orange-500 md:rounded-br-none rounded-b-2xl md:rounded-l-2xl p-10 py-28">
+                <div class="flex flex-col justify-center md:w-1/2 w-full bg-orange-500 dark:bg-gray-900 md:rounded-br-none rounded-b-2xl md:rounded-l-2xl p-10 py-28">
                     <div class="items-titled font-bold text-2xl text-white">به فارکس خوش امدید</div>
                     <div class="w-36 h-1 rounded-xl bg-white my-4"></div>
                     <div class="font-bold text-white leading-7">سایت لورم‌ساز علاوه بر تولید متن ساختگی لورم ایپسوم،
@@ -252,5 +251,17 @@
 
 </div>
 
+<script>
+    const changeTheme = () => {
+        if(document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark')
+        }else {
+        document.documentElement.classList.add('dark')
+        }
+    } 
+    document.querySelector('.darkMode').onclick = () => {
+        changeTheme();
+    }
+</script>
 </body>
 </html>

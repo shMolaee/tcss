@@ -23,9 +23,9 @@ table tr:first-child th:last-child {
 }
     </style>
 </head> 
-<body dir="rtl">
+<body dir="rtl" class="dark:bg-black">
 <div class="overflow-hidden">
-    <div class="w-full bg-orange-200 flex justify-center">
+    <div class="w-full bg-orange-200 dark:bg-stone-900 flex justify-center">
         <div class="navbar bg-transparent max-w-7xl">
 
             <div class="navbar-start">
@@ -38,8 +38,7 @@ table tr:first-child th:last-child {
                                   d="M4 6h16M4 12h8m-8 6h16"/>
                         </svg>
                     </label>
-                    <ul tabindex="0"
-                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a>ورود / ثبت نام</a></li>
                         <li tabindex="0">
                             <a class="justify-between">
@@ -86,18 +85,18 @@ table tr:first-child th:last-child {
                 <div class="w-px mr-3 py-3 bg-white lg:flex hidden"></div>
                 <div class="navbar-center hidden lg:flex navbar-start">
                     <ul class="menu menu-horizontal p-0">
-                        <li><a class="w-max text-lg">خانه</a></li>
-                        <li><a class="w-max text-lg">وبلاگ</a></li>
-                        <li><a class="w-max text-lg">درباره ما</a></li>
-                        <li><a class="w-max text-lg">تماس با ما</a></li>
-                        <li><a class="w-max text-lg">انجمن</a></li>
-                        <li><a class="w-max text-lg">پشتیبانی آنلاین</a></li>
+                        <li><a class="w-max text-lg dark:text-white">خانه</a></li>
+                        <li><a class="w-max text-lg dark:text-white">وبلاگ</a></li>
+                        <li><a class="w-max text-lg dark:text-white">درباره ما</a></li>
+                        <li><a class="w-max text-lg dark:text-white">تماس با ما</a></li>
+                        <li><a class="w-max text-lg dark:text-white">انجمن</a></li>
+                        <li><a class="w-max text-lg dark:text-white">پشتیبانی آنلاین</a></li>
                     </ul>
                 </div>
             </div>
             <div class="navbar-end">
                 <a class="normal-case text-xl">
-                    <img class="w-17 h-17" src="../images/logo.png" alt=""></a>
+                    <img class="w-17 h-17 darkMode dark:bg-white" src="../images/logo.png" alt=""></a>
             </div>
         </div>
     </div>
@@ -105,83 +104,85 @@ table tr:first-child th:last-child {
         <div class="w-full mt-16 px-16 max-w-7xl">
         
             <div class="w-full md:overflow-hidden overflow-x-scroll p-20">
-                <div class="w-full flex justify-center mb-10 text-2xl text-black">مدیریت وی آی پی های ناتو فارکس</div>
+                <div class="w-full flex justify-center mb-10 text-2xl text-black dark:text-white">مدیریت وی آی پی های ناتو فارکس</div>
                 <div class="overflow-x-auto w-full text-lg font-bold rounded-2xl border border-gray-300">
                     <table class="table w-full">
                         <!-- head -->
                         <thead>
                         <tr class="bg-white text-center border border-gray-300">
-                            <th class="text-lg font-bold bg-orange-400 text-black  border-l border-gray-300">وضعیت قبلی</th>
-                            <th class="text-lg font-bold  bg-orange-400 text-black border-l border-gray-300">پیشبینی</th>
-                            <th class="text-lg font-bold  bg-orange-400 text-black border-l border-gray-300">وضعیت فعلی</th>
-                            <th class="text-lg font-bold  bg-orange-400 text-black border-l border-gray-300">ارز</th>
-                            <th class="text-lg font-bold  bg-orange-400 text-black border-l border-gray-300">ساعت</th>
-                            <th class="text-lg font-bold  bg-orange-400 text-black border-l border-gray-300">ارز</th>
-                            <th class="text-lg font-bold  bg-orange-400 text-black border-l border-gray-300">ساعت</th>
-                            <th class="text-lg font-bold  bg-orange-400 text-black">تاریخ</th>
+                            <th class="text-lg font-bold bg-orange-400 dark:bg-black text-black dark:text-white border-l border-gray-300">وضعیت قبلی</th>
+                            <th class="text-lg font-bold bg-orange-400 dark:bg-black text-black dark:text-white border-l border-gray-300">پیشبینی</th>
+                            <th class="text-lg font-bold bg-orange-400 dark:bg-black text-black dark:text-white border-l border-gray-300">وضعیت فعلی</th>
+                            <th class="text-lg font-bold bg-orange-400 dark:bg-black text-black dark:text-white border-l border-gray-300">ارز</th>
+                            <th class="text-lg font-bold bg-orange-400 dark:bg-black text-black dark:text-white border-l border-gray-300">ساعت</th>
+                            <th class="text-lg font-bold bg-orange-400 dark:bg-black text-black dark:text-white border-l border-gray-300">ارز</th>
+                            <th class="text-lg font-bold bg-orange-400 dark:bg-black text-black dark:text-white border-l border-gray-300">ساعت</th>
+                            <th class="text-lg font-bold bg-orange-400 dark:bg-black text-black dark:text-white">تاریخ</th>
                         </tr>
                         </thead>
                         <tbody style="direction: ltr">
                             <!-- row 1 -->
                             <tr class="">
-                                <td class="bg-white border-l border-gray-300">-126m</td>
-                                <td class="bg-white border-l border-gray-300">-808m</td>
-                                <td class="bg-white border-l border-gray-300">-385m</td>
-                                <td class="bg-white border-l border-gray-300">NZD</td>
-                                <td class="bg-white border-l border-gray-300">1.15AM</td>
-                                <td class="border-l bg-white border-gray-300">NZD</td>
-                                <td class="border-l bg-white border-gray-300"></td>
-                                <td class="bg-white border-none">1.15AM</td>
+                                <td class="bg-white dark:bg-black dark:text-white border-l border-gray-300">-126m</td>
+                                <td class="bg-white dark:bg-black dark:text-white border-l border-gray-300">-808m</td>
+                                <td class="bg-white dark:bg-black dark:text-white border-l border-gray-300">-385m</td>
+                                <td class="bg-white dark:bg-black dark:text-white border-l border-gray-300">NZD</td>
+                                <td class="bg-white dark:bg-black dark:text-white border-l border-gray-300">1.15AM</td>
+                                <td class="border-l dark:bg-black dark:text-white bg-white border-gray-300">NZD</td>
+                                <td class="border-l dark:bg-black dark:text-white bg-white border-gray-300"></td>
+                                <td class="bg-white dark:bg-black dark:text-white border-none">1.15AM</td>
                             </tr>
                             <tr class="bg-orange-100 border border-gray-300">
-                                <td class="border-l border-gray-300">-</td>
-                                <td class="border-l border-gray-300">-</td>
-                                <td class="border-l border-gray-300">-385m</td>
-                                <td class="border-l border-gray-300">NZD</td>
-                                <td class="border-l border-gray-300"></td>
-                                <td class="border-l border-gray-300">NZD</td>
-                                <td class="border-l border-gray-300"></td>
-                                <td class="bg-white border-none">1.15AM</td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-l border-gray-300">-126m</td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-l border-gray-300">-808m</td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-l border-gray-300">-385m</td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-l border-gray-300">NZD</td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-l border-gray-300">1.15AM</td>
+                                <td class="border-l dark:bg-gray-900 dark:text-white bg-white border-gray-300">NZD</td>
+                                <td class="border-l dark:bg-gray-900 dark:text-white bg-white border-gray-300"></td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-none">1.15AM</td>
                             </tr>
+                            
                             <tr class="">
-                                <td class="bg-white border-l border-gray-300">-126m</td>
-                                <td class="bg-white border-l border-gray-300">-808m</td>
-                                <td class="bg-white border-l border-gray-300">-385m</td>
-                                <td class="bg-white border-l border-gray-300">NZD</td>
-                                <td class="bg-white border-l border-gray-300">1.15AM</td>
-                                <td class="border-l bg-white border-gray-300">NZD</td>
-                                <td class="border-l bg-white border-gray-300"></td>
-                                <td class="bg-white border-none">1.15AM</td>
+                                <td class="bg-white dark:bg-black dark:text-white border-l border-gray-300">-126m</td>
+                                <td class="bg-white dark:bg-black dark:text-white border-l border-gray-300">-808m</td>
+                                <td class="bg-white dark:bg-black dark:text-white border-l border-gray-300">-385m</td>
+                                <td class="bg-white dark:bg-black dark:text-white border-l border-gray-300">NZD</td>
+                                <td class="bg-white dark:bg-black dark:text-white border-l border-gray-300">1.15AM</td>
+                                <td class="border-l dark:bg-black dark:text-white bg-white border-gray-300">NZD</td>
+                                <td class="border-l dark:bg-black dark:text-white bg-white border-gray-300"></td>
+                                <td class="bg-white dark:bg-black dark:text-white border-none">1.15AM</td>
                             </tr>
                             <tr class="bg-orange-100 border border-gray-300">
-                                <td class="border-l border-gray-300">-</td>
-                                <td class="border-l border-gray-300">-</td>
-                                <td class="border-l border-gray-300">-385m</td>
-                                <td class="border-l border-gray-300">NZD</td>
-                                <td class="border-l border-gray-300"></td>
-                                <td class="border-l border-gray-300">NZD</td>
-                                <td class="border-l border-gray-300"></td>
-                                <td class="bg-white border-none">1.15AM</td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-l border-gray-300">-126m</td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-l border-gray-300">-808m</td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-l border-gray-300">-385m</td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-l border-gray-300">NZD</td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-l border-gray-300">1.15AM</td>
+                                <td class="border-l dark:bg-gray-900 dark:text-white bg-white border-gray-300">NZD</td>
+                                <td class="border-l dark:bg-gray-900 dark:text-white bg-white border-gray-300"></td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-none">1.15AM</td>
                             </tr>
+                            
                             <tr class="">
-                                <td class="bg-white border-l border-gray-300">-126m</td>
-                                <td class="bg-white border-l border-gray-300">-808m</td>
-                                <td class="bg-white border-l border-gray-300">-385m</td>
-                                <td class="bg-white border-l border-gray-300">NZD</td>
-                                <td class="bg-white border-l border-gray-300">1.15AM</td>
-                                <td class="border-l bg-white border-gray-300">NZD</td>
-                                <td class="border-l bg-white border-gray-300"></td>
-                                <td class="bg-white border-none">1.15AM</td>
+                                <td class="bg-white dark:bg-black dark:text-white border-l border-gray-300">-126m</td>
+                                <td class="bg-white dark:bg-black dark:text-white border-l border-gray-300">-808m</td>
+                                <td class="bg-white dark:bg-black dark:text-white border-l border-gray-300">-385m</td>
+                                <td class="bg-white dark:bg-black dark:text-white border-l border-gray-300">NZD</td>
+                                <td class="bg-white dark:bg-black dark:text-white border-l border-gray-300">1.15AM</td>
+                                <td class="border-l dark:bg-black dark:text-white bg-white border-gray-300">NZD</td>
+                                <td class="border-l dark:bg-black dark:text-white bg-white border-gray-300"></td>
+                                <td class="bg-white dark:bg-black dark:text-white border-none">1.15AM</td>
                             </tr>
-                            <tr class="bg-orange-100">
-                                <td class="border-l border-gray-300">-</td>
-                                <td class="border-l border-gray-300">-</td>
-                                <td class="border-l border-gray-300">-385m</td>
-                                <td class="border-l border-gray-300">NZD</td>
-                                <td class="border-l border-gray-300"></td>
-                                <td class="border-l border-gray-300">NZD</td>
-                                <td class="border-l border-gray-300"></td>
-                                <td class="border-none">MonMar 21</td>
+                            <tr class="bg-orange-100 border border-gray-300">
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-l border-gray-300">-126m</td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-l border-gray-300">-808m</td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-l border-gray-300">-385m</td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-l border-gray-300">NZD</td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-l border-gray-300">1.15AM</td>
+                                <td class="border-l dark:bg-gray-900 dark:text-white bg-white border-gray-300">NZD</td>
+                                <td class="border-l dark:bg-gray-900 dark:text-white bg-white border-gray-300"></td>
+                                <td class="bg-white dark:bg-gray-900 dark:text-white border-none">1.15AM</td>
                             </tr>
                         
                         </tbody>
@@ -293,5 +294,17 @@ table tr:first-child th:last-child {
     </footer>
 </div>
 
+<script>
+    const changeTheme = () => {
+        if(document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark')
+        }else {
+        document.documentElement.classList.add('dark')
+        }
+    } 
+    document.querySelector('.darkMode').onclick = () => {
+        changeTheme();
+    }
+</script>
 </body>
 </html>
