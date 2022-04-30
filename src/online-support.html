@@ -15,9 +15,9 @@
         }
     </style>
 </head> 
-<body dir="rtl">
+<body dir="rtl" class="dark:bg-black">
 <div class="overflow-hidden">
-    <div class="w-full bg-orange-200 flex justify-center">
+    <div class="w-full bg-orange-200 dark:bg-stone-900 flex justify-center">
         <div class="navbar bg-transparent max-w-7xl">
 
             <div class="navbar-start">
@@ -30,8 +30,7 @@
                                   d="M4 6h16M4 12h8m-8 6h16"/>
                         </svg>
                     </label>
-                    <ul tabindex="0"
-                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a>ورود / ثبت نام</a></li>
                         <li tabindex="0">
                             <a class="justify-between">
@@ -78,34 +77,34 @@
                 <div class="w-px mr-3 py-3 bg-white lg:flex hidden"></div>
                 <div class="navbar-center hidden lg:flex navbar-start">
                     <ul class="menu menu-horizontal p-0">
-                        <li><a class="w-max text-lg">خانه</a></li>
-                        <li><a class="w-max text-lg">وبلاگ</a></li>
-                        <li><a class="w-max text-lg">درباره ما</a></li>
-                        <li><a class="w-max text-lg">تماس با ما</a></li>
-                        <li><a class="w-max text-lg">انجمن</a></li>
-                        <li><a class="w-max text-lg">پشتیبانی آنلاین</a></li>
+                        <li><a class="w-max text-lg dark:text-white">خانه</a></li>
+                        <li><a class="w-max text-lg dark:text-white">وبلاگ</a></li>
+                        <li><a class="w-max text-lg dark:text-white">درباره ما</a></li>
+                        <li><a class="w-max text-lg dark:text-white">تماس با ما</a></li>
+                        <li><a class="w-max text-lg dark:text-white">انجمن</a></li>
+                        <li><a class="w-max text-lg dark:text-white">پشتیبانی آنلاین</a></li>
                     </ul>
                 </div>
             </div>
             <div class="navbar-end">
                 <a class="normal-case text-xl">
-                    <img class="w-17 h-17" src="../images/logo.png" alt=""></a>
+                    <img class="w-17 h-17 darkMode dark:bg-white" src="../images/logo.png" alt=""></a>
             </div>
         </div>
     </div>
     <div class="w-screen flex justify-center ">
         <div class="w-full mt-16 px-16 max-w-3xl">
         <div class="text-black text-xl">می توانید با پشتیبانی آنلاین با ما در ارتباط باشید و سوالات خود را بپرسید</div>
-            <div class="flex-1 p:2 sm:p-6 justify-between flex flex-col h-screen">
+            <div class="flex-1 p:2 sm:p-6 flex flex-col h-screen">
                 <div class="flex sm:items-center justify-between py-3 border-b-2 border-gray-200">
                    
                    
                 </div>
-                <div id="messages" class="flex flex-col space-y-4 p-3 overflow-y-auto scrolling-touch">
+                <div id="messages" class="flex dark:bg-gray-900 min-h-400 flex-col space-y-4 p-3 overflow-y-auto scrolling-touch">
                    <div class="chat-message">
                       <div class="flex items-end">
                          <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-2 items-start">
-                            <div><span class="px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-300 text-gray-600">Can be verified on any platform using docker</span></div>
+                            <div><span class="px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-300 dark:bg-stone-800 dark:text-white text-gray-600">Can be verified on any platform using docker</span></div>
                          </div>
                          <img src="https://images.unsplash.com/photo-1549078642-b2ba4bda0cdb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3&amp;w=144&amp;h=144" alt="My profile" class="w-6 h-6 rounded-full order-1">
                       </div>
@@ -113,7 +112,7 @@
                    <div class="chat-message">
                       <div class="flex items-end justify-end">
                          <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-1 items-end">
-                            <div><span class="px-4 py-2 rounded-lg inline-block rounded-br-none bg-blue-600 text-white ">Your error message says permission denied, npm global installs must be given root privileges.</span></div>
+                            <div><span class="px-4 py-2 rounded-lg inline-block rounded-br-none bg-blue-600 dark:bg-black text-white ">Your error message says permission denied, npm global installs must be given root privileges.</span></div>
                          </div>
                          <img src="https://images.unsplash.com/photo-1590031905470-a1a1feacbb0b?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3&amp;w=144&amp;h=144" alt="My profile" class="w-6 h-6 rounded-full order-2">
                       </div>
@@ -121,67 +120,7 @@
                    <div class="chat-message">
                       <div class="flex items-end">
                          <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-2 items-start">
-                            <div><span class="px-4 py-2 rounded-lg inline-block bg-gray-300 text-gray-600">Command was run with root privileges. I'm sure about that.</span></div>
-                            <div><span class="px-4 py-2 rounded-lg inline-block bg-gray-300 text-gray-600">I've update the description so it's more obviously now</span></div>
-                            <div><span class="px-4 py-2 rounded-lg inline-block bg-gray-300 text-gray-600">FYI https://askubuntu.com/a/700266/510172</span></div>
-                            <div>
-                               <span class="px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-300 text-gray-600">
-                                  Check the line above (it ends with a # so, I'm running it as root )
-                                  <pre># npm install -g @vue/devtools</pre>
-                               </span>
-                            </div>
-                         </div>
-                         <img src="https://images.unsplash.com/photo-1549078642-b2ba4bda0cdb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3&amp;w=144&amp;h=144" alt="My profile" class="w-6 h-6 rounded-full order-1">
-                      </div>
-                   </div>
-                   <div class="chat-message">
-                      <div class="flex items-end justify-end">
-                         <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-1 items-end">
-                            <div><span class="px-4 py-2 rounded-lg inline-block rounded-br-none bg-blue-600 text-white ">Any updates on this issue? I'm getting the same error when trying to install devtools. Thanks</span></div>
-                         </div>
-                         <img src="https://images.unsplash.com/photo-1590031905470-a1a1feacbb0b?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3&amp;w=144&amp;h=144" alt="My profile" class="w-6 h-6 rounded-full order-2">
-                      </div>
-                   </div>
-                   <div class="chat-message">
-                      <div class="flex items-end">
-                         <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-2 items-start">
-                            <div><span class="px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-300 text-gray-600">Thanks for your message David. I thought I'm alone with this issue. Please, 👍 the issue to support it :)</span></div>
-                         </div>
-                         <img src="https://images.unsplash.com/photo-1549078642-b2ba4bda0cdb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3&amp;w=144&amp;h=144" alt="My profile" class="w-6 h-6 rounded-full order-1">
-                      </div>
-                   </div>
-                   <div class="chat-message">
-                      <div class="flex items-end justify-end">
-                         <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-1 items-end">
-                            <div><span class="px-4 py-2 rounded-lg inline-block bg-blue-600 text-white ">Are you using sudo?</span></div>
-                            <div><span class="px-4 py-2 rounded-lg inline-block rounded-br-none bg-blue-600 text-white ">Run this command sudo chown -R `whoami` /Users/{{your_user_profile}}/.npm-global/ then install the package globally without using sudo</span></div>
-                         </div>
-                         <img src="https://images.unsplash.com/photo-1590031905470-a1a1feacbb0b?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3&amp;w=144&amp;h=144" alt="My profile" class="w-6 h-6 rounded-full order-2">
-                      </div>
-                   </div>
-                   <div class="chat-message">
-                      <div class="flex items-end">
-                         <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-2 items-start">
-                            <div><span class="px-4 py-2 rounded-lg inline-block bg-gray-300 text-gray-600">It seems like you are from Mac OS world. There is no /Users/ folder on linux 😄</span></div>
-                            <div><span class="px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-300 text-gray-600">I have no issue with any other packages installed with root permission globally.</span></div>
-                         </div>
-                         <img src="https://images.unsplash.com/photo-1549078642-b2ba4bda0cdb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3&amp;w=144&amp;h=144" alt="My profile" class="w-6 h-6 rounded-full order-1">
-                      </div>
-                   </div>
-                   <div class="chat-message">
-                      <div class="flex items-end justify-end">
-                         <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-1 items-end">
-                            <div><span class="px-4 py-2 rounded-lg inline-block rounded-br-none bg-blue-600 text-white ">yes, I have a mac. I never had issues with root permission as well, but this helped me to solve the problem</span></div>
-                         </div>
-                         <img src="https://images.unsplash.com/photo-1590031905470-a1a1feacbb0b?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3&amp;w=144&amp;h=144" alt="My profile" class="w-6 h-6 rounded-full order-2">
-                      </div>
-                   </div>
-                   <div class="chat-message">
-                      <div class="flex items-end">
-                         <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-2 items-start">
-                            <div><span class="px-4 py-2 rounded-lg inline-block bg-gray-300 text-gray-600">I get the same error on Arch Linux (also with sudo)</span></div>
-                            <div><span class="px-4 py-2 rounded-lg inline-block bg-gray-300 text-gray-600">I also have this issue, Here is what I was doing until now: #1076</span></div>
-                            <div><span class="px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-300 text-gray-600">even i am facing</span></div>
+                            <div><span class="px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-300 dark:bg-stone-800 dark:text-white text-gray-600">Can be verified on any platform using docker</span></div>
                          </div>
                          <img src="https://images.unsplash.com/photo-1549078642-b2ba4bda0cdb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3&amp;w=144&amp;h=144" alt="My profile" class="w-6 h-6 rounded-full order-1">
                       </div>
@@ -255,8 +194,7 @@
              </script>
                 </div>
     </div>
-
-    <footer class="relative flex justify-center mt-56 z-20 bg-orange-200 w-full sm:p-20 p-8 pt-0" style="margin-top: 170px;">
+    <footer class="relative flex justify-center mt-56 z-20 bg-orange-200 dark:bg-stone-900 w-full sm:p-20 p-8 pt-0" style="margin-top: 170px;">
         <div class="max-w-7xl w-full">
             <div class="flex flex-row justify-between flex-wrap md:flex-row flex-col md:items-start items-center md:text-right text-center">
                 <div class="flex flex-col">
@@ -264,24 +202,21 @@
                         <img class="w-17 h-17" src="/images/logo.png" alt="">
                     </div>
                     <div class="flex flex-row mt-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-                             fill="#000000">
+                        <svg class="dark:fill-white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
                             <path d="M0 0h24v24H0z" fill="none"/>
                             <path d="M17.38 10.79l-2.2-2.2c-.28-.28-.36-.67-.25-1.02.37-1.12.57-2.32.57-3.57 0-.55.45-1 1-1H20c.55 0 1 .45 1 1 0 9.39-7.61 17-17 17-.55 0-1-.45-1-1v-3.49c0-.55.45-1 1-1 1.24 0 2.45-.2 3.57-.57.35-.12.75-.03 1.02.24l2.2 2.2c2.83-1.45 5.15-3.76 6.59-6.59z"/>
                         </svg>
                         <div class="text-lg  mr-4">09123456789</div>
                     </div>
                     <div class="flex flex-row my-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-                             fill="#000000">
+                        <svg class="dark:fill-white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
                             <path d="M0 0h24v24H0z" fill="none"/>
                             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                         </svg>
                         <div class="text-lg mr-4">gmail@gmail.com</div>
                     </div>
                     <div class="flex flex-row">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-                             fill="#000000">
+                        <svg class="dark:fill-white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
                             <path d="M0 0h24v24H0z" fill="none"/>
                             <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
                         </svg>
@@ -291,12 +226,12 @@
                 <div class="flex flex-col max-w-sm w-full">
                     <div class="text-lg font-bold my-7">لینک های کاربردی</div>
                     <a href="" class="flex flex-col">
-                        <div class="font-bold w-full border-dotted border-2 border-orange-200 border-b-black py-4">
+                        <div class="font-bold w-full border-dotted border-2 border-orange-200 dark:border-stone-900 dark:border-b-gray-700 border-b-black py-4">
                             ارتباط با ما
                         </div>
                     </a>
                     <a href="" class="flex flex-col my-5">
-                        <div class="font-bold border-dotted border-2 border-orange-200 border-b-black pb-4">درباره ما
+                        <div class="font-bold border-dotted border-2 border-orange-200 dark:border-stone-900 dark:border-b-gray-700 border-b-black pb-4">درباره ما
                         </div>
                     </a>
                     <a href="" class="flex flex-col">
@@ -308,12 +243,12 @@
                     <div class="flex space-x-3">
                         <div></div>
                         <a href="" class="border border-gray-700 border-2 p-2">
-                            <svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="dark:fill-white" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M 26.070313 3.996094 C 25.734375 4.011719 25.417969 4.109375 25.136719 4.21875 L 25.132813 4.21875 C 24.847656 4.332031 23.492188 4.902344 21.433594 5.765625 C 19.375 6.632813 16.703125 7.757813 14.050781 8.875 C 8.753906 11.105469 3.546875 13.300781 3.546875 13.300781 L 3.609375 13.277344 C 3.609375 13.277344 3.25 13.394531 2.875 13.652344 C 2.683594 13.777344 2.472656 13.949219 2.289063 14.21875 C 2.105469 14.488281 1.957031 14.902344 2.011719 15.328125 C 2.101563 16.050781 2.570313 16.484375 2.90625 16.722656 C 3.246094 16.964844 3.570313 17.078125 3.570313 17.078125 L 3.578125 17.078125 L 8.460938 18.722656 C 8.679688 19.425781 9.949219 23.597656 10.253906 24.558594 C 10.433594 25.132813 10.609375 25.492188 10.828125 25.765625 C 10.933594 25.90625 11.058594 26.023438 11.207031 26.117188 C 11.265625 26.152344 11.328125 26.179688 11.390625 26.203125 C 11.410156 26.214844 11.429688 26.21875 11.453125 26.222656 L 11.402344 26.210938 C 11.417969 26.214844 11.429688 26.226563 11.441406 26.230469 C 11.480469 26.242188 11.507813 26.246094 11.558594 26.253906 C 12.332031 26.488281 12.953125 26.007813 12.953125 26.007813 L 12.988281 25.980469 L 15.871094 23.355469 L 20.703125 27.0625 L 20.8125 27.109375 C 21.820313 27.550781 22.839844 27.304688 23.378906 26.871094 C 23.921875 26.433594 24.132813 25.875 24.132813 25.875 L 24.167969 25.785156 L 27.902344 6.65625 C 28.007813 6.183594 28.035156 5.742188 27.917969 5.3125 C 27.800781 4.882813 27.5 4.480469 27.136719 4.265625 C 26.769531 4.046875 26.40625 3.980469 26.070313 3.996094 Z M 25.96875 6.046875 C 25.964844 6.109375 25.976563 6.101563 25.949219 6.222656 L 25.949219 6.234375 L 22.25 25.164063 C 22.234375 25.191406 22.207031 25.25 22.132813 25.308594 C 22.054688 25.371094 21.992188 25.410156 21.667969 25.28125 L 15.757813 20.75 L 12.1875 24.003906 L 12.9375 19.214844 C 12.9375 19.214844 22.195313 10.585938 22.59375 10.214844 C 22.992188 9.84375 22.859375 9.765625 22.859375 9.765625 C 22.886719 9.3125 22.257813 9.632813 22.257813 9.632813 L 10.082031 17.175781 L 10.078125 17.15625 L 4.242188 15.191406 L 4.242188 15.1875 C 4.238281 15.1875 4.230469 15.183594 4.226563 15.183594 C 4.230469 15.183594 4.257813 15.171875 4.257813 15.171875 L 4.289063 15.15625 L 4.320313 15.144531 C 4.320313 15.144531 9.53125 12.949219 14.828125 10.71875 C 17.480469 9.601563 20.152344 8.476563 22.207031 7.609375 C 24.261719 6.746094 25.78125 6.113281 25.867188 6.078125 C 25.949219 6.046875 25.910156 6.046875 25.96875 6.046875 Z"/>
                             </svg>
                         </a>
                         <a href="" class="border border-gray-700 border-2 p-2">
-                            <svg width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="dark:fill-white" width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <g>
                                     <path fill="none" d="M0 0h24v24H0z"/>
                                     <path fill-rule="nonzero"
@@ -322,8 +257,7 @@
                             </svg>
                         </a>
                         <a href="" class="border border-gray-700 border-2 p-2">
-                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
                                       stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                                       stroke-linejoin="round"/>
@@ -334,7 +268,7 @@
                             </svg>
                         </a>
                         <a href="" class="border border-gray-700 border-2 p-2">
-                            <svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="dark:fill-white" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <style>.cls-1 {
                                         fill: none;
@@ -358,5 +292,17 @@
     </footer>
 </div>
 
+<script>
+    const changeTheme = () => {
+        if(document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark')
+        }else {
+        document.documentElement.classList.add('dark')
+        }
+    } 
+    document.querySelector('.darkMode').onclick = () => {
+        changeTheme();
+    }
+</script>
 </body>
 </html>
