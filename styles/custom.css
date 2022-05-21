@@ -84,6 +84,9 @@ body input {
     bottom: 0;
     background-color: #FF7A30;
 }
+.dark .items-title::after {
+    background-color: #f35500;
+}
 
 .table_item-card {
     position: relative;
@@ -97,7 +100,7 @@ body input {
     border-radius: 0 0 10px 10px;
     position: absolute;
     top: 0;
-    background-color: #FF7A30;
+    background-color: #fa5700;
 }
 
 table tr:nth-child(even) td {background-color: #FFE2C7;}

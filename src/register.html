@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,269 +11,306 @@
     <script src="../js/swiper.min.js"></script>
     <script src="../js/main.js"></script>
 </head>
+
 <body dir="rtl" class="dark:bg-black">
-<div class="overflow-hidden">
-    <div class="w-full bg-orange-200 dark:bg-stone-900 flex justify-center">
-        <div class="navbar bg-transparent max-w-7xl">
+    <div class="overflow-hidden">
+        <div class="w-full bg-orange-200 dark:bg-stone-900 flex justify-center">
+            <div class="navbar bg-transparent max-w-7xl">
 
-            <div class="navbar-start">
+                <div class="navbar-start">
 
-                <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                             stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M4 6h16M4 12h8m-8 6h16"/>
-                        </svg>
-                    </label>
-                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>ورود / ثبت نام</a></li>
-                        <li tabindex="0">
-                            <a class="justify-between">
-                                زبان
-                                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                     viewBox="0 0 24 24">
-                                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/>
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>ورود / ثبت نام</a></li>
+                            <li tabindex="0">
+                                <a class="justify-between">
+                                    زبان
+                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                                    </svg>
+                                </a>
+                                <ul class="p-2  rounded bg-white">
+                                    <li><a>فارسی</a></li>
+                                    <li><a>عربی</a></li>
+                                </ul>
+                            </li>
+                            <li><a>درباره ما</a></li>
+                            <li><a>تماس با ما</a></li>
+                            <li><a>ارتباط با ما</a></li>
+                        </ul>
+                    </div>
+                    <ul class="menu menu-horizontal p-0 lg:flex hidden">
+                        <li tabindex="0" class="menu-oppener">
+                            <a class="btn btn-sm bg-orange-500 text-white border-none py-0">زبان
+                                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 24">
+                                    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                                 </svg>
                             </a>
-                            <ul class="p-2  rounded bg-white">
-                                <li><a>فارسی</a></li>
-                                <li><a>عربی</a></li>
+                            <ul class="p-2 left-unset right-0">
+                                <li class="menu-item bg-orange-500">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-text text-white">English</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item bg-orange-500">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-text text-white">عربی</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
-                        <li><a>درباره ما</a></li>
-                        <li><a>تماس با ما</a></li>
-                        <li><a>ارتباط با ما</a></li>
+                        <li><a class="btn btn-sm bg-orange-500 text-white border-none  mr-2  py-0">ثبت نام / ورود</a>
+                        </li>
                     </ul>
-                </div>
-                <ul class="menu menu-horizontal p-0 lg:flex hidden">
-                    <li tabindex="0" class="menu-oppener">
-                        <a class="btn btn-sm bg-orange-500 text-white border-none py-0">زبان
-                            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                 viewBox="0 0 24 24">
-                                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
-                            </svg>
-                        </a>
-                        <ul class="p-2 left-unset right-0">
-                            <li class="menu-item bg-orange-500">
-                                <a class="menu-link" href="#">
-                                    <span class="menu-text text-white">English</span>
-                                </a>
-                            </li>
-                            <li class="menu-item bg-orange-500">
-                                <a class="menu-link" href="#">
-                                    <span class="menu-text text-white">عربی</span>
-                                </a>
-                            </li>
+                    <div class="w-px mr-3 py-3 bg-white lg:flex hidden"></div>
+                    <div class="navbar-center hidden lg:flex navbar-start">
+                        <ul class="menu menu-horizontal p-0">
+                            <li><a class="w-max text-lg dark:text-white">خانه</a></li>
+                            <li><a class="w-max text-lg dark:text-white">وبلاگ</a></li>
+                            <li><a class="w-max text-lg dark:text-white">درباره ما</a></li>
+                            <li><a class="w-max text-lg dark:text-white">تماس با ما</a></li>
+                            <li><a class="w-max text-lg dark:text-white">انجمن</a></li>
+                            <li><a class="w-max text-lg dark:text-white">پشتیبانی آنلاین</a></li>
                         </ul>
-                    </li>
-                    <li><a class="btn btn-sm bg-orange-500 text-white border-none  mr-2  py-0">ثبت نام / ورود</a>
-                    </li>
-                </ul>
-                <div class="w-px mr-3 py-3 bg-white lg:flex hidden"></div>
-                <div class="navbar-center hidden lg:flex navbar-start">
-                    <ul class="menu menu-horizontal p-0">
-                        <li><a class="w-max text-lg dark:text-white">خانه</a></li>
-                        <li><a class="w-max text-lg dark:text-white">وبلاگ</a></li>
-                        <li><a class="w-max text-lg dark:text-white">درباره ما</a></li>
-                        <li><a class="w-max text-lg dark:text-white">تماس با ما</a></li>
-                        <li><a class="w-max text-lg dark:text-white">انجمن</a></li>
-                        <li><a class="w-max text-lg dark:text-white">پشتیبانی آنلاین</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="navbar-end">
-                <div class=" dark:bg-white p-1 mt-2 rounded-md">
-                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-                  <desc>Created with Fabric.js 1.7.22</desc>
-                  <defs>
-                  </defs>
-                  <g transform="translate(128 128) scale(0.72 0.72)">
-                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)">
-                    <path d="M 87.823 60.7 c -0.463 -0.423 -1.142 -0.506 -1.695 -0.214 c -15.834 8.398 -35.266 2.812 -44.232 -12.718 c -8.966 -15.53 -4.09 -35.149 11.101 -44.665 c 0.531 -0.332 0.796 -0.963 0.661 -1.574 c -0.134 -0.612 -0.638 -1.074 -1.259 -1.153 c -9.843 -1.265 -19.59 0.692 -28.193 5.66 C 13.8 12.041 6.356 21.743 3.246 33.35 S 1.732 57.08 7.741 67.487 c 6.008 10.407 15.709 17.851 27.316 20.961 C 38.933 89.486 42.866 90 46.774 90 c 7.795 0 15.489 -2.044 22.42 -6.046 c 8.601 -4.966 15.171 -12.43 18.997 -21.586 C 88.433 61.79 88.285 61.123 87.823 60.7 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-                  </g>
-                  </g>
-                  </svg>
-                </div>
-                <div class="form-check form-switch mt-1 margin-0  mr-2">
-                  <input class="form-check-input darkMode min-w-10 appearance-none w-9 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-gray-300 focus:outline-none cursor-pointer shadow-sm" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                </div>
-                </script>
-                  <a class="normal-case text-xl">
-                      <img class="w-17 h-17 dark:text-white text-amber-500 logo" src="../images/logo.png" alt=""></a>
-              </div>
-        </div>
-    </div>
-    <div class="flex flex-col justify-center mt-10">
-        <div class="w-full flex justify-center">
-            <div class="p-5 bg-gray-300 dark:bg-stone-800 max-w-5xl w-full flex md:flex-row flex-col">
-                <div class="flex md:w-1/2 w-full bg-white dark:bg-stone-900 md:rounded-r-2xl md:rounded-tl-none rounded-t-2xl p-7 flex-col justify-center">
-                    <div class="items-title font-bold text-3xl text-black dark:text-white">ثبت نام</div>
-                    <form class="w-full max-w-sm mx-auto rounded-lg overflow-hidden p-6 space-y-10">
-                        <div class="relative border-b-4 border-gray-300 focus-within:border-blue-500">
-                            <input type="text" name="username" placeholder=" " id="username"
-                                   class="block w-full pb-1 appearance-none focus:outline-none bg-transparent"/>
-                            <label for="username" class="absolute top-0 duration-300 origin-0">نام کاربری</label>
-                        </div>
-                        <div class="relative border-b-4 border-gray-300 focus-within:border-blue-500">
-                            <input type="text" name="username" placeholder=" " id="username"
-                                   class="block w-full pb-1 appearance-none focus:outline-none bg-transparent"/>
-                            <label for="username" class="absolute top-0 duration-300 origin-0">نام کاربری</label>
-                        </div>
-                        <div class="relative border-b-4 border-gray-300 focus-within:border-blue-500">
-                            <input type="text" name="email" placeholder=" " id="email"
-                                   class="block w-full pb-1 appearance-none focus:outline-none bg-transparent"/>
-                            <label for="email" class="absolute top-0 duration-300 origin-0">ایمیل</label>
-                        </div>
-                        <div class="relative border-b-4 border-gray-300 focus-within:border-blue-500">
-                            <input type="password" name="password" placeholder=" " id="password"
-                                   class="block w-full pb-1 appearance-none focus:outline-none bg-transparent"/>
-                            <label for="password" class="absolute top-0 duration-300 origin-0">رمز عبور</label>
-                        </div>
-
-                        <div class="flex justify-center">
-                            <a class="btn px-20 btn-md btn-sm rounded-2xl dark:bg-stone-900 dark:bg-stone-800 shadow-3xl shadow shadow-black dark:shadow-gray-600 bg-orange-500 text-white border-none">
-                                ورود</a></div>
-
-                    </form>
-                    <div class="pr-12">
-                        حساب کاربری دارید؟ ثبت نام کنید
                     </div>
                 </div>
-                <div class="hidden flex-col justify-center md:flex">
-                    <div class="mb-10 flex justify-center">
-                        <div class="btn btn-circle border-none drop-shadow-[0_2px_5px_rgba(82,82,82,.85)] absolute bg-orange-500 dark:bg-stone-900">
-                            <i class="fa fa-angle-right text-lg"></i></div>
-                    </div>
-                </div>
-                <div class="flex flex-col justify-center md:w-1/2 w-full bg-orange-500 dark:bg-gray-900 md:rounded-br-none rounded-b-2xl md:rounded-l-2xl p-10 py-28">
-                    <div class="items-titled font-bold text-2xl text-white">به فارکس خوش امدید</div>
-                    <div class="w-36 h-1 rounded-xl bg-white my-4"></div>
-                    <div class="font-bold text-white leading-7">سایت لورم‌ساز علاوه بر تولید متن ساختگی لورم ایپسوم،
-                        انواع ابزارهای آنلاین در زمینه‌های طراحی وبسایت و گرافیک، حسابداری و اندازه‌گیری و دیگر ابزارهای
-                        کاربردی برای استفاده در کارهای مختلف ارائه می‌دهدحسابداری و اندازه‌گیری و دیگر ابزارهای کاربردی
-                        برای استفاده در کارهای مختلف ارائه می‌دهدحسابداری و اندازه‌گیری و دیگر ابزارهای کاربردی .
-                    </div>
-
-                    <div class="flex justify-start mt-5">
-                        <a class="btn rounded-2xl bg-transparent text-white border-white border-2">
-                            بیشتر بدانید ...</a></div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="relative flex justify-center mt-56 z-20 bg-orange-200 dark:bg-stone-900 w-full sm:p-20 p-8 pt-0" style="margin-top: 170px;">
-        <div class="max-w-7xl w-full">
-            <div class="flex flex-row justify-between flex-wrap md:flex-row flex-col md:items-start items-center md:text-right text-center">
-                <div class="flex flex-col">
-                    <div class="title my-9">
-                        <img class="w-17 h-17" src="/images/logo.png" alt="">
-                    </div>
-                    <div class="flex flex-row mt-0">
-                        <svg class="dark:fill-white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M17.38 10.79l-2.2-2.2c-.28-.28-.36-.67-.25-1.02.37-1.12.57-2.32.57-3.57 0-.55.45-1 1-1H20c.55 0 1 .45 1 1 0 9.39-7.61 17-17 17-.55 0-1-.45-1-1v-3.49c0-.55.45-1 1-1 1.24 0 2.45-.2 3.57-.57.35-.12.75-.03 1.02.24l2.2 2.2c2.83-1.45 5.15-3.76 6.59-6.59z"/>
-                        </svg>
-                        <div class="text-lg  mr-4">09123456789</div>
-                    </div>
-                    <div class="flex flex-row my-5">
-                        <svg class="dark:fill-white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                        </svg>
-                        <div class="text-lg mr-4">gmail@gmail.com</div>
-                    </div>
-                    <div class="flex flex-row">
-                        <svg class="dark:fill-white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-                        </svg>
-                        <div class="text-lg mr-4">پشتیبانی آنلاین</div>
-                    </div>
-                </div>
-                <div class="flex flex-col max-w-sm w-full">
-                    <div class="text-lg font-bold my-7">لینک های کاربردی</div>
-                    <a href="" class="flex flex-col">
-                        <div class="font-bold w-full border-dotted border-2 border-orange-200 dark:border-stone-900 dark:border-b-gray-700 border-b-black py-4">
-                            ارتباط با ما
-                        </div>
-                    </a>
-                    <a href="" class="flex flex-col my-5">
-                        <div class="font-bold border-dotted border-2 border-orange-200 dark:border-stone-900 dark:border-b-gray-700 border-b-black pb-4">درباره ما
-                        </div>
-                    </a>
-                    <a href="" class="flex flex-col">
-                        <div class="font-bold">پشتیبانی انلاین</div>
-                    </a>
-                </div>
-                <div class="flex flex-col">
-                    <div class="text-lg font-bold my-7">لینک های کاربردی</div>
-                    <div class="flex space-x-3">
-                        <div></div>
-                        <a href="" class="border border-gray-700 border-2 p-2">
-                            <svg class="dark:fill-white" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M 26.070313 3.996094 C 25.734375 4.011719 25.417969 4.109375 25.136719 4.21875 L 25.132813 4.21875 C 24.847656 4.332031 23.492188 4.902344 21.433594 5.765625 C 19.375 6.632813 16.703125 7.757813 14.050781 8.875 C 8.753906 11.105469 3.546875 13.300781 3.546875 13.300781 L 3.609375 13.277344 C 3.609375 13.277344 3.25 13.394531 2.875 13.652344 C 2.683594 13.777344 2.472656 13.949219 2.289063 14.21875 C 2.105469 14.488281 1.957031 14.902344 2.011719 15.328125 C 2.101563 16.050781 2.570313 16.484375 2.90625 16.722656 C 3.246094 16.964844 3.570313 17.078125 3.570313 17.078125 L 3.578125 17.078125 L 8.460938 18.722656 C 8.679688 19.425781 9.949219 23.597656 10.253906 24.558594 C 10.433594 25.132813 10.609375 25.492188 10.828125 25.765625 C 10.933594 25.90625 11.058594 26.023438 11.207031 26.117188 C 11.265625 26.152344 11.328125 26.179688 11.390625 26.203125 C 11.410156 26.214844 11.429688 26.21875 11.453125 26.222656 L 11.402344 26.210938 C 11.417969 26.214844 11.429688 26.226563 11.441406 26.230469 C 11.480469 26.242188 11.507813 26.246094 11.558594 26.253906 C 12.332031 26.488281 12.953125 26.007813 12.953125 26.007813 L 12.988281 25.980469 L 15.871094 23.355469 L 20.703125 27.0625 L 20.8125 27.109375 C 21.820313 27.550781 22.839844 27.304688 23.378906 26.871094 C 23.921875 26.433594 24.132813 25.875 24.132813 25.875 L 24.167969 25.785156 L 27.902344 6.65625 C 28.007813 6.183594 28.035156 5.742188 27.917969 5.3125 C 27.800781 4.882813 27.5 4.480469 27.136719 4.265625 C 26.769531 4.046875 26.40625 3.980469 26.070313 3.996094 Z M 25.96875 6.046875 C 25.964844 6.109375 25.976563 6.101563 25.949219 6.222656 L 25.949219 6.234375 L 22.25 25.164063 C 22.234375 25.191406 22.207031 25.25 22.132813 25.308594 C 22.054688 25.371094 21.992188 25.410156 21.667969 25.28125 L 15.757813 20.75 L 12.1875 24.003906 L 12.9375 19.214844 C 12.9375 19.214844 22.195313 10.585938 22.59375 10.214844 C 22.992188 9.84375 22.859375 9.765625 22.859375 9.765625 C 22.886719 9.3125 22.257813 9.632813 22.257813 9.632813 L 10.082031 17.175781 L 10.078125 17.15625 L 4.242188 15.191406 L 4.242188 15.1875 C 4.238281 15.1875 4.230469 15.183594 4.226563 15.183594 C 4.230469 15.183594 4.257813 15.171875 4.257813 15.171875 L 4.289063 15.15625 L 4.320313 15.144531 C 4.320313 15.144531 9.53125 12.949219 14.828125 10.71875 C 17.480469 9.601563 20.152344 8.476563 22.207031 7.609375 C 24.261719 6.746094 25.78125 6.113281 25.867188 6.078125 C 25.949219 6.046875 25.910156 6.046875 25.96875 6.046875 Z"/>
-                            </svg>
-                        </a>
-                        <a href="" class="border border-gray-700 border-2 p-2">
-                            <svg class="dark:fill-white" width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path fill="none" d="M0 0h24v24H0z"/>
-                                    <path fill-rule="nonzero"
-                                          d="M7.253 18.494l.724.423A7.953 7.953 0 0 0 12 20a8 8 0 1 0-8-8c0 1.436.377 2.813 1.084 4.024l.422.724-.653 2.401 2.4-.655zM2.004 22l1.352-4.968A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.004 22zM8.391 7.308c.134-.01.269-.01.403-.004.054.004.108.01.162.016.159.018.334.115.393.249.298.676.588 1.357.868 2.04.062.152.025.347-.093.537a4.38 4.38 0 0 1-.263.372c-.113.145-.356.411-.356.411s-.099.118-.061.265c.014.056.06.137.102.205l.059.095c.256.427.6.86 1.02 1.268.12.116.237.235.363.346.468.413.998.75 1.57 1l.005.002c.085.037.128.057.252.11.062.026.126.049.191.066a.35.35 0 0 0 .367-.13c.724-.877.79-.934.796-.934v.002a.482.482 0 0 1 .378-.127c.06.004.121.015.177.04.531.243 1.4.622 1.4.622l.582.261c.098.047.187.158.19.265.004.067.01.175-.013.373-.032.259-.11.57-.188.733a1.155 1.155 0 0 1-.21.302 2.378 2.378 0 0 1-.33.288 3.71 3.71 0 0 1-.125.09 5.024 5.024 0 0 1-.383.22 1.99 1.99 0 0 1-.833.23c-.185.01-.37.024-.556.014-.008 0-.568-.087-.568-.087a9.448 9.448 0 0 1-3.84-2.046c-.226-.199-.435-.413-.649-.626-.89-.885-1.562-1.84-1.97-2.742A3.47 3.47 0 0 1 6.9 9.62a2.729 2.729 0 0 1 .564-1.68c.073-.094.142-.192.261-.305.127-.12.207-.184.294-.228a.961.961 0 0 1 .371-.1z"/>
+                <div class="navbar-end">
+                    <div class=" dark:bg-white p-1 mt-2 rounded-md">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256"
+                            viewBox="0 0 256 256" xml:space="preserve">
+                            <desc>Created with Fabric.js 1.7.22</desc>
+                            <defs>
+                            </defs>
+                            <g transform="translate(128 128) scale(0.72 0.72)">
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                    transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)">
+                                    <path
+                                        d="M 87.823 60.7 c -0.463 -0.423 -1.142 -0.506 -1.695 -0.214 c -15.834 8.398 -35.266 2.812 -44.232 -12.718 c -8.966 -15.53 -4.09 -35.149 11.101 -44.665 c 0.531 -0.332 0.796 -0.963 0.661 -1.574 c -0.134 -0.612 -0.638 -1.074 -1.259 -1.153 c -9.843 -1.265 -19.59 0.692 -28.193 5.66 C 13.8 12.041 6.356 21.743 3.246 33.35 S 1.732 57.08 7.741 67.487 c 6.008 10.407 15.709 17.851 27.316 20.961 C 38.933 89.486 42.866 90 46.774 90 c 7.795 0 15.489 -2.044 22.42 -6.046 c 8.601 -4.966 15.171 -12.43 18.997 -21.586 C 88.433 61.79 88.285 61.123 87.823 60.7 z"
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
                                 </g>
-                            </svg>
-                        </a>
-                        <a href="" class="border border-gray-700 border-2 p-2">
-                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
-                                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round"/>
-                                <path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
-                                      stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M17.5 6.51L17.51 6.49889" stroke="currentColor" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <a href="" class="border border-gray-700 border-2 p-2">
-                            <svg class="dark:fill-white" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <style>.cls-1 {
-                                        fill: none;
-                                        stroke: #000;
-                                        stroke-linecap: round;
-                                        stroke-linejoin: round;
-                                    }</style>
-                                </defs>
-                                <g id="ic-social-media-youtube">
-                                    <path class="cls-1"
-                                          d="M16,25.47a55.55,55.55,0,0,0,9.59-.59A3.51,3.51,0,0,0,28,23S29,20.74,29,16,28,9,28,9a3.86,3.86,0,0,0-2.37-1.9A55.55,55.55,0,0,0,16,6.53a55.55,55.55,0,0,0-9.59.59A3.51,3.51,0,0,0,4,9S3,11.26,3,16,4,23,4,23a3.86,3.86,0,0,0,2.37,1.9A55.55,55.55,0,0,0,16,25.47Z"/>
-                                    <path class="cls-1"
-                                          d="M12.78,19.22V12.78A.79.79,0,0,1,14,12.11l5.36,3.22a.78.78,0,0,1,0,1.34L14,19.89A.79.79,0,0,1,12.78,19.22Z"/>
-                                </g>
-                            </svg>
-                        </a>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="form-check form-switch mt-1 margin-0  mr-2">
+                        <input
+                            class="form-check-input darkMode min-w-10 appearance-none w-9 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-gray-300 focus:outline-none cursor-pointer shadow-sm"
+                            type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    </div>
+                    </script>
+                    <a class="normal-case text-xl">
+                        <img class="w-17 h-17 dark:text-white text-amber-500 logo" src="../images/logo.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center mt-10">
+            <div class="w-full flex justify-center">
+                <div class="p-5 bg-gray-300 dark:bg-black max-w-5xl w-full flex md:flex-row flex-col">
+                    <div
+                        class="flex md:w-1/2 w-full bg-white dark:bg-black border border-white border-4 border-l-0 md:rounded-r-2xl md:rounded-tl-none rounded-t-2xl p-7 flex-col justify-center">
+                        <div class="items-title font-bold text-3xl dark:text-white text-black">ورود</div>
+                        <form class="w-full max-w-sm mx-auto rounded-lg overflow-hidden p-6 space-y-10">
+                            <div class="relative border-b-4 border-gray-400 focus-within:border-blue-500">
+                                <input type="text" name="username" placeholder=" " id="username"
+                                    class="block w-full pb-1 appearance-none focus:outline-none bg-transparent" />
+                                <label for="username" class="absolute top-0 duration-300 origin-0">نام کاربری</label>
+                            </div>
+                            <div class="relative border-b-4 border-gray-400 focus-within:border-blue-500">
+                                <input type="text" name="email" placeholder=" " id="email"
+                                    class="block w-full pb-1 appearance-none focus:outline-none bg-transparent" />
+                                <label for="email" class="absolute top-0 duration-300 origin-0">ایمیل</label>
+                            </div>
+                            <div class="relative border-b-4 border-gray-400 focus-within:border-blue-500">
+                                <input type="password" name="password" placeholder=" " id="password"
+                                    class="block w-full pb-1 appearance-none focus:outline-none bg-transparent" />
+                                <label for="password" class="absolute top-0 duration-300 origin-0">رمز عبور</label>
+                            </div>
+                            <div class="relative border-b-4 border-gray-400 focus-within:border-blue-500">
+                                <input type="password" name="password" placeholder=" " id="password"
+                                    class="block w-full pb-1 appearance-none focus:outline-none bg-transparent" />
+                                <label for="password" class="absolute top-0 duration-300 origin-0">رمز عبور</label>
+                            </div>
+
+                            <div class="flex justify-center">
+                                <a
+                                    class="btn px-20 btn-md btn-sm rounded-2xl dark:bg-orange-600 dark:bg-stone-800 bg-orange-500 text-white border-none">
+                                    ورود</a>
+                            </div>
+
+                        </form>
+                        <div class="pr-12 dark:text-white">
+                            حساب کاربری ندارید؟ وارد شوید
+                        </div>
+                    </div>
+                    <div class="hidden flex-col justify-center md:flex">
+                        <div class="mb-10 flex justify-center">
+                            <div class="btn btn-circle border-none absolute bg-orange-500 dark:bg-orange-600">
+                                <i class="fa fa-angle-right text-lg text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col justify-center md:w-1/2 w-full bg-orange-500 dark:bg-orange-600 md:rounded-br-none rounded-b-2xl md:rounded-l-2xl p-10 py-28">
+                        <div class="items-titled font-bold text-2xl text-white">به فارکس خوش امدید</div>
+                        <div class="w-36 h-1 rounded-xl bg-white my-4"></div>
+                        <div class="font-bold text-white leading-7">سایت لورم‌ساز علاوه بر تولید متن ساختگی لورم ایپسوم،
+                            انواع ابزارهای آنلاین در زمینه‌های طراحی وبسایت و گرافیک، حسابداری و اندازه‌گیری و دیگر
+                            ابزارهای
+                            کاربردی برای استفاده در کارهای مختلف ارائه می‌دهدحسابداری و اندازه‌گیری و دیگر ابزارهای
+                            کاربردی
+                            برای استفاده در کارهای مختلف ارائه می‌دهدحسابداری و اندازه‌گیری و دیگر ابزارهای کاربردی .
+                        </div>
+
+                        <div class="flex justify-start mt-5">
+                            <a class="btn rounded-2xl bg-transparent text-white border-white border-2">
+                                بیشتر بدانید ...</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+        <footer class="relative flex justify-center mt-56 z-20 bg-orange-200 dark:bg-stone-900 w-full sm:p-20 p-8 pt-0"
+            style="margin-top: 170px;">
+            <div class="max-w-7xl w-full">
+                <div
+                    class="flex flex-row justify-between flex-wrap md:flex-row flex-col md:items-start items-center md:text-right text-center">
+                    <div class="flex flex-col">
+                        <div class="title my-9">
+                            <img class="w-17 h-17" src="/images/logo.png" alt="">
+                        </div>
+                        <div class="flex flex-row mt-0">
+                            <svg class="dark:fill-white" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 0 24 24" width="24px" fill="#000000">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M17.38 10.79l-2.2-2.2c-.28-.28-.36-.67-.25-1.02.37-1.12.57-2.32.57-3.57 0-.55.45-1 1-1H20c.55 0 1 .45 1 1 0 9.39-7.61 17-17 17-.55 0-1-.45-1-1v-3.49c0-.55.45-1 1-1 1.24 0 2.45-.2 3.57-.57.35-.12.75-.03 1.02.24l2.2 2.2c2.83-1.45 5.15-3.76 6.59-6.59z" />
+                            </svg>
+                            <div class="text-lg  mr-4">09123456789</div>
+                        </div>
+                        <div class="flex flex-row my-5">
+                            <svg class="dark:fill-white" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 0 24 24" width="24px" fill="#000000">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                            <div class="text-lg mr-4">gmail@gmail.com</div>
+                        </div>
+                        <div class="flex flex-row">
+                            <svg class="dark:fill-white" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 0 24 24" width="24px" fill="#000000">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                            </svg>
+                            <div class="text-lg mr-4">پشتیبانی آنلاین</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col max-w-sm w-full">
+                        <div class="text-lg font-bold my-7">لینک های کاربردی</div>
+                        <a href="" class="flex flex-col">
+                            <div
+                                class="font-bold w-full border-dotted border-2 border-orange-200 dark:border-stone-900 dark:border-b-gray-700 border-b-black py-4">
+                                ارتباط با ما
+                            </div>
+                        </a>
+                        <a href="" class="flex flex-col my-5">
+                            <div
+                                class="font-bold border-dotted border-2 border-orange-200 dark:border-stone-900 dark:border-b-gray-700 border-b-black pb-4">
+                                درباره ما
+                            </div>
+                        </a>
+                        <a href="" class="flex flex-col">
+                            <div class="font-bold">پشتیبانی انلاین</div>
+                        </a>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="text-lg font-bold my-7">لینک های کاربردی</div>
+                        <div class="flex space-x-3">
+                            <div></div>
+                            <a href="" class="border border-gray-700 border-2 p-2">
+                                <svg class="dark:fill-white" width="32px" height="32px" viewBox="0 0 32 32"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M 26.070313 3.996094 C 25.734375 4.011719 25.417969 4.109375 25.136719 4.21875 L 25.132813 4.21875 C 24.847656 4.332031 23.492188 4.902344 21.433594 5.765625 C 19.375 6.632813 16.703125 7.757813 14.050781 8.875 C 8.753906 11.105469 3.546875 13.300781 3.546875 13.300781 L 3.609375 13.277344 C 3.609375 13.277344 3.25 13.394531 2.875 13.652344 C 2.683594 13.777344 2.472656 13.949219 2.289063 14.21875 C 2.105469 14.488281 1.957031 14.902344 2.011719 15.328125 C 2.101563 16.050781 2.570313 16.484375 2.90625 16.722656 C 3.246094 16.964844 3.570313 17.078125 3.570313 17.078125 L 3.578125 17.078125 L 8.460938 18.722656 C 8.679688 19.425781 9.949219 23.597656 10.253906 24.558594 C 10.433594 25.132813 10.609375 25.492188 10.828125 25.765625 C 10.933594 25.90625 11.058594 26.023438 11.207031 26.117188 C 11.265625 26.152344 11.328125 26.179688 11.390625 26.203125 C 11.410156 26.214844 11.429688 26.21875 11.453125 26.222656 L 11.402344 26.210938 C 11.417969 26.214844 11.429688 26.226563 11.441406 26.230469 C 11.480469 26.242188 11.507813 26.246094 11.558594 26.253906 C 12.332031 26.488281 12.953125 26.007813 12.953125 26.007813 L 12.988281 25.980469 L 15.871094 23.355469 L 20.703125 27.0625 L 20.8125 27.109375 C 21.820313 27.550781 22.839844 27.304688 23.378906 26.871094 C 23.921875 26.433594 24.132813 25.875 24.132813 25.875 L 24.167969 25.785156 L 27.902344 6.65625 C 28.007813 6.183594 28.035156 5.742188 27.917969 5.3125 C 27.800781 4.882813 27.5 4.480469 27.136719 4.265625 C 26.769531 4.046875 26.40625 3.980469 26.070313 3.996094 Z M 25.96875 6.046875 C 25.964844 6.109375 25.976563 6.101563 25.949219 6.222656 L 25.949219 6.234375 L 22.25 25.164063 C 22.234375 25.191406 22.207031 25.25 22.132813 25.308594 C 22.054688 25.371094 21.992188 25.410156 21.667969 25.28125 L 15.757813 20.75 L 12.1875 24.003906 L 12.9375 19.214844 C 12.9375 19.214844 22.195313 10.585938 22.59375 10.214844 C 22.992188 9.84375 22.859375 9.765625 22.859375 9.765625 C 22.886719 9.3125 22.257813 9.632813 22.257813 9.632813 L 10.082031 17.175781 L 10.078125 17.15625 L 4.242188 15.191406 L 4.242188 15.1875 C 4.238281 15.1875 4.230469 15.183594 4.226563 15.183594 C 4.230469 15.183594 4.257813 15.171875 4.257813 15.171875 L 4.289063 15.15625 L 4.320313 15.144531 C 4.320313 15.144531 9.53125 12.949219 14.828125 10.71875 C 17.480469 9.601563 20.152344 8.476563 22.207031 7.609375 C 24.261719 6.746094 25.78125 6.113281 25.867188 6.078125 C 25.949219 6.046875 25.910156 6.046875 25.96875 6.046875 Z" />
+                                </svg>
+                            </a>
+                            <a href="" class="border border-gray-700 border-2 p-2">
+                                <svg class="dark:fill-white" width="32px" height="32px" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path fill-rule="nonzero"
+                                            d="M7.253 18.494l.724.423A7.953 7.953 0 0 0 12 20a8 8 0 1 0-8-8c0 1.436.377 2.813 1.084 4.024l.422.724-.653 2.401 2.4-.655zM2.004 22l1.352-4.968A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.004 22zM8.391 7.308c.134-.01.269-.01.403-.004.054.004.108.01.162.016.159.018.334.115.393.249.298.676.588 1.357.868 2.04.062.152.025.347-.093.537a4.38 4.38 0 0 1-.263.372c-.113.145-.356.411-.356.411s-.099.118-.061.265c.014.056.06.137.102.205l.059.095c.256.427.6.86 1.02 1.268.12.116.237.235.363.346.468.413.998.75 1.57 1l.005.002c.085.037.128.057.252.11.062.026.126.049.191.066a.35.35 0 0 0 .367-.13c.724-.877.79-.934.796-.934v.002a.482.482 0 0 1 .378-.127c.06.004.121.015.177.04.531.243 1.4.622 1.4.622l.582.261c.098.047.187.158.19.265.004.067.01.175-.013.373-.032.259-.11.57-.188.733a1.155 1.155 0 0 1-.21.302 2.378 2.378 0 0 1-.33.288 3.71 3.71 0 0 1-.125.09 5.024 5.024 0 0 1-.383.22 1.99 1.99 0 0 1-.833.23c-.185.01-.37.024-.556.014-.008 0-.568-.087-.568-.087a9.448 9.448 0 0 1-3.84-2.046c-.226-.199-.435-.413-.649-.626-.89-.885-1.562-1.84-1.97-2.742A3.47 3.47 0 0 1 6.9 9.62a2.729 2.729 0 0 1 .564-1.68c.073-.094.142-.192.261-.305.127-.12.207-.184.294-.228a.961.961 0 0 1 .371-.1z" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="" class="border border-gray-700 border-2 p-2">
+                                <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M17.5 6.51L17.51 6.49889" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="" class="border border-gray-700 border-2 p-2">
+                                <svg class="dark:fill-white" width="32px" height="32px" viewBox="0 0 32 32"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: none;
+                                                stroke: #000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <g id="ic-social-media-youtube">
+                                        <path class="cls-1"
+                                            d="M16,25.47a55.55,55.55,0,0,0,9.59-.59A3.51,3.51,0,0,0,28,23S29,20.74,29,16,28,9,28,9a3.86,3.86,0,0,0-2.37-1.9A55.55,55.55,0,0,0,16,6.53a55.55,55.55,0,0,0-9.59.59A3.51,3.51,0,0,0,4,9S3,11.26,3,16,4,23,4,23a3.86,3.86,0,0,0,2.37,1.9A55.55,55.55,0,0,0,16,25.47Z" />
+                                        <path class="cls-1"
+                                            d="M12.78,19.22V12.78A.79.79,0,0,1,14,12.11l5.36,3.22a.78.78,0,0,1,0,1.34L14,19.89A.79.79,0,0,1,12.78,19.22Z" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-</div>
+    </div>
 
-<script>
-    const changeTheme = () => {
-        if(document.documentElement.classList.contains('dark')) {
-        document.documentElement.classList.remove('dark')
-        }else {
-        document.documentElement.classList.add('dark')
+    <script>
+        const changeTheme = () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark')
+            } else {
+                document.documentElement.classList.add('dark')
+            }
         }
-    } 
-    document.querySelector('.darkMode').onclick = () => {
-        changeTheme();
-    }
-</script>
+        document.querySelector('.darkMode').onclick = () => {
+            changeTheme();
+        }
+    </script>
 </body>
+
 </html>
